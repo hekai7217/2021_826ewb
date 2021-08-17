@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12-运算符的注意点1.html</title>
+    <script>
+        /**
+         * 注意点:
+         1.加法运算的注意点
+         1.1任何非数值类型的数据在参与加法运算之前, 都会被自动的转换成数值类型之后, 再参与运算
+         1.2任何数据和NaN进行运算, 结果都是NaN
+         1.3任何数据和字符串相加, 都会被先转换成字符串之后再运算
+         */
+
+        // let a = true;
+        // let b = 10;
+        // let c = a + b;
+        // console.log(c);
+        //
+        // // Number(null)  0
+        // let d = null;
+        //
+        // // Number(undefined)   NaN
+        // let e = undefined;
+        // console.log(d + b); // 0 + 10 = 10
+        //
+        // // NaN + 10   NaN
+        // console.log(e + b);
+        // // Number(null)  + Number(undefined)
+        // //     0           +           NaN
+        // console.log(null + undefined);
+        // 1.3任何数据和字符串相加, 都会被先转换成字符串之后再运算
+        let s1 = "123";
+        //          "123" + String(10)
+        let s2 = s1 + 10;
+        console.log(s2);
+
+        // "123" + String(true)
+        let s3 = s1 + true;
+        console.log(s3);
+        let s4 = s1 + null;
+        let s5 = s1 + undefined;
+        console.log(s4);
+        console.log(s5);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

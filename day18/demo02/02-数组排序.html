@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-数组排序.html.html</title>
+    <script>
+
+        let arr = [5,4,3,2,1];
+        // 排序  1,2,3,4,5
+        // 有大量的重复代码 可以使用循环嵌套
+        /**
+         *  把 5和4进行比较  如果5比4大 交换位置
+         *  [5,4,3,2,1];
+         *  [4,5,3,2,1];
+         *  把 5和3进行比较  如果5比3大 交换位置
+         *  [4,3,5,2,1];
+         *  把 5和2进行比较  如果5比2大 交换位置
+         *  [4,3,2,5,1];
+         *  把 5和1进行比较  如果5比1大 交换位置
+         *  [4,3,2,1,5];
+         *   冒泡排序
+         */
+        for (let j = 0 ; j < arr.length-1;j++){
+            for(let i =0; i < arr.length-1-j ; i++){
+                if (arr[i] > arr[i+1]){
+                    let temp = arr[i];
+                    arr[i] = arr[i+1];
+                    arr[i + 1] = temp;
+                }
+            }
+            console.log(arr);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

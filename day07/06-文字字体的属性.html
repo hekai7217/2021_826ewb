@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-文字字体的属性.html</title>
+    <style>
+
+        div{
+            /*font-family: "微软雅黑";*/
+
+            font-family: "张三","楷体";
+        }
+
+        span{
+            font-family: Arial,"张胜男","楷体";
+        }
+
+    </style>
+</head>
+<body>
+<!--
+4.规定文字字体的属性
+格式：font-family:"楷体";
+注意点：
+1.如果取值是中文， 需要用双引号或者单引号括起来
+2.设置的字体必须是用户电脑里面已经安装的字体
+快捷键
+ff font-family:;
+
+1.如果设置的字体不存在, 那么系统会使用默认的字体来显示
+默认使用宋体
+
+2.如果设置的字体不存在, 而我们又不想用默认的字体来显示怎么办?
+可以给字体设置备选方案
+格式:font-family:"字体1", "备选方案1", ...;
+
+3.补充在企业开发中最常见的字体有以下几个
+中文: 宋体/黑体/微软雅黑
+英文: "Times New Roman"/Arial
+
+还需要知道一点, 就是并不是名称是英文就一定是英文字体
+因为中文字体其实都有自己的英文名称, 所以是不是中文字体主要看能不能处理中文
+宋体 SimSun
+黑体 SimHei
+微软雅黑 Microsoft YaHei
+
+4.如果需要单独对英文设置字体,英文字体必须写在最前面,后面跟中文字体
+有些英文字体不支持中文,需要单独的设置中文字体
+
+a-z  26字母    设置字体很简单
+汉字:  一个个汉字进行字体设置
+
+缩写格式:
+font: style weight size family;
+例如:
+font:italic bold 10px "楷体";
+-->
+<div>
+    我是div标签
+</div>
+<span>
+    my name is 张三
+</span>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-标签元素的高度.html</title>
+    <style>
+        .b1 {
+            background-color: skyblue;
+            height: 100px;
+        }
+
+        ul {
+            background-color: #ff79ef;
+            height: 60px;
+        }
+
+        ul li{
+            background-color: yellow;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+  块元素   的高度可以自己设置
+  01  如果块级元素没有给内容,没有设置高宽  没有高度不会显示
+  02  如果块级元素没设置高宽,有内容,高度由 内容撑开
+  03  设置的高度  高度值就是设置的值
+
+  块级元素是父容器高度是怎么样的?
+  01  如果父容器没有设置高度,子容器撑开父容器
+  02  如果设置了高度   父容器就是设置的高度
+  03  子容器的高度大于父容器的高度,溢出
+-->
+<div class="b1">
+    Hello div
+</div>
+
+<ul>
+    <li>郑州</li>
+    <li>南京</li>
+</ul>
+
+</body>
+</html>

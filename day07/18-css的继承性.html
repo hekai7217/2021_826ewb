@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>18-css的继承性.html</title>
+    <style>
+        div {
+            color: #ff79ef;
+            font-size: 20px;
+            font-weight: bold;
+            text-indent: 2em;
+            line-height: 20px;
+
+            text-decoration: none;
+        }
+
+        a {
+            color: yellow;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+1. 什么是继承性?
+作用: 就是通过给父元素设置相关样式属性,子元素也可以直接使用,这个我们就叫做继承性
+2. 继承性的特点:
+a. 并不是所有的属性都能够被子元素继承, 只有样式属性叫做 color/font-xxx/text-xxx/line-xxx的样式可以被继承
+
+b. 在CSS继承体系结构中,不仅仅只有儿子元素可以被继承,那么只要是后代都是可以继承的
+c. 继承的中有些样式是比较特殊的
+     (1) a标签的文字颜色和下划线是不能够被继承的
+     	如果希望超链接有自己的颜色和文本装饰样式,那么需要单独选中超链接标签设置
+     (2) h系列的标题标签的文字大小也是不能够被继承
+      	如果希望h系列标签有自己的文字大小,那么需要单独选中h系列标签设置
+d. 通过谷歌浏览器可以查看到哪些属性被继承,哪些属性没有被继承,被继承的样式会正常显示在inherit from XXX下面, 没有被继承的样式会显示浅灰色或者是删除线
+e. 一般都是用于抽取网页中共同的CSS样式,从而简化CSS代码, 例如京东官网通过继承设置统一的字体颜色,大小等等
+-->
+<div>
+    <p>
+        昔我往昔,杨柳依依
+    <p>
+        <span>
+              这是一首思乡的诗句
+        </span>
+    </p>
+
+    <a href="#">
+        我是a标签
+    </a>
+    </p>
+    <span>
+        今我来思,雨雪霏霏
+    </span>
+
+    <h1>雨雪霏霏</h1>
+
+</div>
+
+</body>
+</html>

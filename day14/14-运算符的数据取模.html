@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14-运算符的数据取模.html</title>
+    <script>
+
+        /**
+         * 4.取模(取余)运算注意点
+         格式: m%n = 余数
+         4.1如果m>n的, 那么就正常取余
+         4.2如果m<n的, 那么结果就是m
+         4.3如果n是0, 那么结果就是NaN
+         4.4取余运算结果的正负性, 取决于m而不是n
+         */
+
+        let m = 10;
+        let n = 3;
+        // m >n 正常取
+        //  10 / 3 = 3 ...1
+        console.log(m%n);
+        // m < n 结果是 m
+        // 3 / 10 = 0 ... 3
+        console.log(n%m);
+
+        // 除数不能为 0  为   NaN
+        console.log(m%0);
+
+        // 取余运算结果的正负性, 取决于m而不是
+        // 10 / -3 = -3 ...1
+        console.log(10%-3);
+        // -10 / -3 = 3 ...-1
+        console.log(-10%-3);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

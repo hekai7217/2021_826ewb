@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13-动画的其他属性.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            height: 50px;
+            width: 100px;
+
+            background-color: green;
+
+            /* 绑定动画 名称*/
+            animation-name: move;
+            /*动画执行的时间 */
+            animation-duration: 3s;
+            /*    动画的延时时间 默认是 0*/
+            animation-delay: 0s;
+            /*    动画运动的方式
+                linear 匀速
+                ease    开始速度慢 到 速度快
+            */
+            /*animation-timing-function: ease;*/
+            animation-timing-function: revert;
+            /* 动画执行的次数
+                默认是一次 ,可以设置多次
+                infinite   无数次
+            */
+            animation-iteration-count: infinite;
+        /*    animation-direction  动画的描述
+             normal - 动画正常播放（向前）。默认值
+            reverse - 动画以反方向播放（向后）
+            alternate - 动画先向前播放，然后向后
+            alternate-reverse - 动画先向后播放，然后向前
+        */
+            /*animation-direction: alternate-reverse;*/
+        }
+
+        div:hover{
+            /* 动画的暂停 */
+            animation-play-state: paused;
+        }
+
+        @keyframes move {
+
+            from {
+                margin-left: 0;
+            }
+            to {
+                margin-left: 800px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div></div>
+</body>
+</html>

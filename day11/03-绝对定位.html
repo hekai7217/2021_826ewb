@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-绝对定位.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .b1{
+            width: 100px;
+            height: 100px;
+            background-color: #ff79ef;
+            /* 绝对定位 */
+            position: absolute;
+
+            /*left: 100px;*/
+            /*top: 100px;*/
+            /*top: 0;*/
+            right: 0;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+什么是绝对定位?
+绝对定位就是相对于body来定位
+
+绝对定位注意点
+2.1绝对定位的元素是脱离标准流的
+2.2绝对定位的元素是不区分块级元素/行内元素/行内块级元素
+
+-->
+<div class="b1"></div>
+<div class="b2"></div>
+<div class="b3"></div>
+<div class="b4"></div>
+
+</body>
+</html>

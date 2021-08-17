@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-嵌套循环.html</title>
+    <script>
+
+        /**
+         * 外层循环控制行数  内存循环控制个数
+         *
+         * 01 break  在 循环结束当前的循环
+         *  如果是在嵌套循环中, 只能结束内部循环
+         *
+         * 02 continue 在循环中,跳过当前的循环
+         *    如果是在嵌套循环中, 只能跳过内部循环
+         */
+         for (let i = 0 ;i < 5;i++){
+             for (let j = 0 ; j <5;j++){
+                 document.write("*");
+             }
+             document.write("<br>");
+         }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

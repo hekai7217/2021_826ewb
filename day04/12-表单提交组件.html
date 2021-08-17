@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12-表单提交组件.html</title>
+</head>
+<body>
+
+<!--
+标准URL格式:
+http://127.0.0.1:8848/day1123_htmldemo3/server/server.html
+			?username=admin
+			&password=123456
+			&gender=male
+			&hobby=dnf&hobby=lol
+			&constellation=doubleSon			&introducemyself=%E4%BD%A0%E7%8C%9C%E6%88%91%E6%98%AF%E8%B0%81
+			&goodid=1001
+默认表单提交的编码类型是application/x-www-form-urlencoded
+这个值表单会对当前的url进行URL编码，服务器会自动解码，我们不需要关心
+我们同时也可以指定我们的一个表单属性来显示确定表单编码类型，这个属性是 enctype
+
+<input type="submit" value="提交"/> 表示通过按钮提交
+<input type="image" src="../img/renren.gif" /> 表示通过图片
+同时还可以通过js提交，后面课程详细讲解
+<input type="button" value="点击" /> 表示当前表单表示的就是一个单纯的按钮，这个按钮一般结合javascript事件使用
+例如:
+<input type="button" value="点击" onclick="alert('我没有提交,打我啊!!'); "/>
+<input type="reset" value="重置" /> 表示当前表单是一个重置按钮，重置表示的意思是回到初始状态。
+
+<button>btn的方式提交</button> 这个方式也可以提交 内容
+button 如果写在form表单外部 不能提交数据
+
+-->
+
+<form action="server/server.html" method="get">
+    <p>
+        姓名:<input type="text" name="name" value="scott">
+    </p>
+
+    <p>
+        年龄:<input type="text" name="age">
+    </p>
+    <p>
+        个人简介:<input type="text" name="info">
+    </p>
+    <p>
+        <input type="submit" value="提交">
+        <input type="image" src="images/btn_reg.gif">
+        <!--         这个要使用js来提交 -->
+        <input type="button" value="按钮的方式提交">
+        <!--        可以直接点击提交 -->
+        <button>btn的方式提交</button>
+
+        <input type="reset">
+
+    </p>
+</form>
+<button>btn的方式提交2</button>
+</body>
+</html>

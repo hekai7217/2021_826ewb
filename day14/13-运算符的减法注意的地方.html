@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13-运算符的减法注意的地方.html</title>
+    <script>
+        /**
+         2.减法运算的注意点
+         1.1任何非数值类型的数据在参与加法运算之前, 都会被自动的转换成数值类型之后, 再参与运算
+         1.2任何数据和NaN进行运算, 结果都是NaN
+
+         1.3任何数据和字符串相减, 都会先把字符串转换成数值类型之后再运算
+         */
+        let a = 10;
+        let b1 = a - true;
+        let b2 = a - null;
+        let b3= a - undefined;
+        let b4= a - "abc";
+        console.log(b1);
+        console.log(b1);
+        console.log(b3);
+        console.log(b4);
+
+        // 在 数据和字符串进行 相减,把字符串转成数值类型进行计算
+        let b5 = a - "123";
+        // 在数据和字符串进行相加, 把数据转成字符串 进行计算
+        let b6 = a + "123";
+        console.log(b5); // -113
+        console.log(b6); // 10123
+
+        // "a123" 转成 数值  a123 直接转成 NaN
+        // 计算 a - NaN = NaN
+        let b7 = a - "a123";
+        console.log(b7);
+
+        let c = 3
+        // "abc" ===> NaN
+        let b10 = "abc";
+        let res1 = c * b10;
+        console.log(res1);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

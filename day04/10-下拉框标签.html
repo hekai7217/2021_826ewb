@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉框标签</title>
+</head>
+<body>
+<!--
+Select表示下拉选项框
+Option: 表示select标签的子标签，表示下拉选项框的选项
+常用属性
+name : 这个属性必须指定在select中，表示提交的键
+value: 这个属性必须指定在 option中，表示提交的值
+multiple: 表示这个下拉选项框是一个多行选项框
+       按住ctrl + 多选就可以
+selected: 表示当前option被默认选中
+        selected="selected"  设置默认选中
+        简写 selected
+-->
+<form action="server/server.html" method="get">
+     <p>
+          选择你喜欢的城市:
+         <select name="city">
+             <option value="wh">武汉</option>
+             <option value="cs" selected>长沙</option>
+             <option value="gz">广州</option>
+             <option value="nj">南京</option>
+         </select>
+     </p>
+    <p><input type="submit" value="提交"></p>
+</form>
+</body>
+</html>

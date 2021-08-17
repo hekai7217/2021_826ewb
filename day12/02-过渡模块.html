@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-过渡模块.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            height: 100px;
+            /* 状态  A*/
+            width: 50px;
+            background-color: green;
+
+            /*      设置过渡
+                 transition:  改变的属性  改变的时间  运动样式  延时事件
+            */
+            transition: width 3s;
+        /*
+            过渡模块的实现:
+             01   从状态A - 改为状态B   属性发生变化
+             02   设置 transition: 属性  改变时间
+        */
+        }
+
+        div:hover {
+            /*      修改属性    状态B*/
+            width: 500px;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+
+</body>
+</html>

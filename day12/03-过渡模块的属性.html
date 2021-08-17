@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-过多模块的属性.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            height: 50px;
+            width: 100px;
+            background-color: red;
+
+        /*      设置过渡模块的属性
+            transition-property  过渡模块的属性
+        */
+            transition-property: width;
+            /*  transition-duration 过渡模块时间*/
+            transition-duration: 3s;
+
+            /*  过渡动画的运行 方式
+            linear  动画匀速
+            ease  从慢到块
+            */
+            transition-timing-function: linear;
+            /*  多长时间后执行 */
+            transition-delay: 3s;
+        }
+
+        div:hover{
+            width: 500px;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+</div>
+
+</body>
+</html>

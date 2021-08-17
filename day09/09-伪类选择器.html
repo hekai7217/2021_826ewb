@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09-伪类选择器.html</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li:hover{
+            background-color: #ff79ef;
+        }
+
+        /*
+         ul li:hover  p
+           p是li的后代
+        */
+        /*ul li:hover p{*/
+        /*    color: red;*/
+        /*    font-size: 20px;*/
+        /*}*/
+        /*
+         span是li的后代
+        */
+        /*ul li:hover span{*/
+        /*    color: red;*/
+        /*    font-size: 20px;*/
+        /*}*/
+
+        /*
+      span是li的子代
+     */
+        ul li:hover > span{
+            color: red;
+            font-size: 20px;
+        }
+
+        /* 组合选择器   */
+        ul li:hover,span{
+            color: red;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<ul>
+    <li>
+        <p>
+            <span>我是span</span>
+        </p>
+        <span>
+            我是span
+        </span>
+    </li>
+    <li>
+        <p>
+            <span>我是span</span>
+        </p>
+        <span>
+            我是span
+        </span>
+    </li>
+    <li>
+        <p>
+            <span>我是span</span>
+        </p>
+        <span>
+            我是span
+        </span>
+    </li>
+</ul>
+
+<p>我是p标签</p>
+<span>我是span标签</span>
+
+</body>
+</html>

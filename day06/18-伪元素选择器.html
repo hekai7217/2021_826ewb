@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+
+
+    <style>
+
+            /*div::before{*/
+            /*    content: "我是before";*/
+            /*}*/
+
+            /*div::after{*/
+            /*    content: "我是after";*/
+            /*}*/
+
+    </style>
+</head>
+<body>
+<!--
+伪元素选择器
+作用就是给指定标签的内容的前面或者后面添加一个子元素或者文本
+
+格式:
+标签名称::before {
+   属性名称: 属性值;
+}
+表示给某个标签的内容的前面添加子元素或者文本
+标签名称::after {
+     属性名称: 属性值;
+}
+表示给某个标签的内容的后面添加子元素或者文本
+
+意义:
+   效果是一样的
+   通过html添加内容
+   通过css添加内容   如果是 通过css添加样式,如果用html添加样式 不规范(html是操作文本语义)
+    后面会用和这个选择器添加css的样式比如 浮动清除
+-->
+<div>
+    <span>我是before</span>
+    hello div
+    <span>我是after</span>
+</div>
+
+</body>
+</html>

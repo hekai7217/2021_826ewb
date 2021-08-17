@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14-外边距.html</title>
+    <style>
+
+            .b1{
+                height: 100px;
+                width: 100px;
+                background-color: skyblue;
+                /*margin-top: 10px;*/
+                /*margin-right: 20px;*/
+                /*margin-bottom: 30px;*/
+                /*margin-left: 40px;*/
+
+                /*margin: 10px 20px 30px 40px;*/
+                /*!* 一个值 四个方向都是一样的 *!*/
+                /*margin: 10px;*/
+                /*!* 2个值   上下 第一个值  左右第二个值 *!*/
+                /*margin: 10px 20px;*/
+                /*!* 3个值  10px 上面    30 下面   20 左右 *!*/
+                /*margin: 10px 20px 30px ;*/
+            }
+
+            .b2{
+                height: 100px;
+                width: 100px;
+                background-color: skyblue;
+
+            }
+
+            span:nth-of-type(1){
+                margin-right: 20px;
+            }
+
+            span:nth-of-type(2){
+                margin-left: 20px;
+            }
+
+
+            .b3{
+                height: 100px;
+                width: 100px;
+                background-color: skyblue;
+                margin-bottom: 30px;
+            }
+
+            .b4{
+                height: 100px;
+                width: 100px;
+                background-color: skyblue;
+                margin-top: 40px;
+            }
+    </style>
+</head>
+<body>
+<!--
+1.外边距
+标签和标签之间的距离就是外边距
+
+2.格式
+(1) 分别设置四个方向的外边距
+margin-top: ;
+margin-right: ;
+margin-bottom: ;
+margin-left: ;
+
+(2) 统一设置四个方向的内边距
+margin: 上 右 下 左;
+这三个属性的取值是可以省略的
+
+总结:
+1.外边距的那一部分是没有背景颜色的
+2.任何空白字符在HTML中都会被浏览器当做空格来解析,这并不是外边距
+
+外边距合并现象:
+    1. 在水平方向上, 如果在两个相反的反向上同时设置了margin属性,那么两个元素的外边距就等于不同方向上外边距之和.
+    2. 在垂直方向上, 默认情况下是不会出现边框叠加求和的,会出现合并现象,合并外边距之后,谁的外边距大那么就以谁的外边距为主.
+-->
+<div class="b1">
+
+
+
+</div>
+<p class="b2">
+
+</p>
+
+<span>span1</span>
+<span>span2</span>
+
+<div class="b3">
+
+</div>
+<div class="b4">
+
+</div>
+</body>
+</html>

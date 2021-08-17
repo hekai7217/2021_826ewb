@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-习题讲解.html</title>
+    <script>
+        /**
+         * 5.判断输入年份是不是闰年
+         */
+        // 拿到输入的年份
+        let  year = prompt("请输入年份");
+        // 判断润年
+        //year % 4 === 0 && year % 100 !=0   除以4 不能除以100是润年
+        //year % 400 == 0   除以4 00 是润年
+        if ( year % 4 == 0 && year % 100 !=0 || year % 400 == 0 ){
+                alert("润年");
+        }else{
+            alert("普通年");
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-标签选择器.html</title>
+    <style>
+            div{
+                background-color: red;
+            }
+
+            p{
+                background-color: #ff79ef;
+            }
+
+            /*body{*/
+            /*    background-color: gray;*/
+            /*}*/
+
+            a{
+                background-color: aqua;
+            }
+
+    </style>
+</head>
+<body>
+
+<!--
+标签选择器: 利用标签名称做为选择器的名称,可以选择页面上的一种标签
+格式:
+标签名称{
+    属性名称:属性值;
+}
+
+注意点:
+1.标签选择器选中的是当前界面中所有的标签, 而不能单独选中某一个标签
+2.标签选择器无论标签在哪里,层级多深都能选中
+3.只要是HTML中的标签就可以作为标签选择器
+
+-->
+<div>我是div</div>
+<p>我是p标签</p>
+<span>我是span标签</span>
+
+<ul>
+    <li>
+        <p>我是li下面的p标签</p>
+    </li>
+</ul>
+
+<a href="http://www.baidu.com">百度一下...</a>
+
+</body>
+</html>

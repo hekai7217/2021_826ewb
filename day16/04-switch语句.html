@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-switch语句.html</title>
+    <script>
+
+        /**
+         * switch语句
+         *
+         * 1.switch格式:
+         switch(表达式){
+            case 表达式A:
+                语句A;
+            break;
+            case 表达式B:
+              语句B;
+            break;
+            ... ...
+            default:
+            前面所有case都不匹配执行的代码;
+            break;
+        }
+         2.switch特点
+         会从上至下的依次判断每一个case是否和()中表达式的结果相等, 如果相等就执行对应case后面的代码, 如果前面所有的case都不匹配, 那么就会执行default后面的代码
+         并且所有的case和default只有一个会被执行, 并且只会被执行一次
+         *
+         */
+            // 进行判断 如果是周一 吃大餐   周二 吃粥   周三   泡面 其他的吃 龙肉
+        //  weekDay 是字符串
+        let weekDay = prompt("请输入几天是周几");
+
+        // switch中使用的是  === 进行比较   == 比较的是数值(内容)
+        switch (weekDay) {
+            case "1":
+                console.log("大餐  ");
+                break;
+            case "2":
+                console.log("吃粥  ");
+                break;
+            case "3":
+                console.log("泡面  ");
+                break;
+            default:
+                console.log("龙肉  ");
+                break;
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

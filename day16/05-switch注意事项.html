@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-switch注意事项.html</title>
+    <script>
+
+        /**
+         * 注意点:
+         1.case判断的是===, 而不是==
+         2.()中可以是常量也可以是变量还可以是表达式
+                switch (num)           给变量  (用的多)
+                switch (123)            给常量
+                switch (122 + 1)  给表达式
+         3.case后面可以是常量也可以是变量还可以是表达式
+                 case (num)           给变量
+                 case (123)            给常量 (用的多)
+                 case (122 + 1)      给表达式
+         4.break的作用是立即结束整个switch语句
+         5.default不一定要写在最后
+         6.和if/else中的else一样, default也可以省略
+         */
+        let num = 123;
+        switch (num) {
+            case "123":
+                alert("我是字符串");
+                break;  // 当前的 switch 语句 结束
+            // switch中的default无论放到什么位置, 都会等到所有case都不匹配再执行
+            // default:
+            //     alert("我是个特殊数据");
+            //     break;
+            case 123:
+                alert("我是num");
+                break;
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

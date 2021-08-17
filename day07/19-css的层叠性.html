@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>19-css的层叠性.html</title>
+    <style>
+
+             #b1{
+                 color: red;
+
+                 color: #ff79ef;
+             }
+
+            /*.b2{*/
+            /*    color: green;*/
+            /*}*/
+
+            /*div{*/
+            /*    color: skyblue;*/
+            /*}*/
+    </style>
+</head>
+<body>
+<!--
+ 1. 什么是层叠性?
+    层叠性就是CSS处理样式冲突的一种特性
+    样式冲突指的就是多个选择器选中,同一个标签,并且设置了相同的属性,才会发生冲突,产生层叠性.
+    01  选择器的优先级
+    02 后面的样式会覆盖前面的样式
+
+-->
+<div id="b1" class="b2">
+    疫情严重了 大家不要瞎跑
+</div>
+
+</body>
+</html>

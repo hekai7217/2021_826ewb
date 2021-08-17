@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-css的调试.html</title>
+    <style>
+            div{
+                height: 30px;
+                font-size: 20px;
+            }
+
+            span{
+                color: blue;
+            }
+
+    </style>
+</head>
+<body>
+<!--
+掌握了选择之后,我们就可以学习对应的样式了,
+但是在学习样式之前,还希望教大家掌握CSS调试
+通过我们F12查看浏览器,可以从以下几个方面来调试CSS
+1. 通过观察element.style 查看标签设置的行内样式
+            <div style="color: green">
+2. 通过观察自定义的内联或者外联样式查看,还可以看样式设置的行号
+
+3. 通过观察 user agent stylesheet查看系统设置的样式(背景是灰色的)
+       很多标签有 自己系统默认设置的样式
+
+4. 通过观察 inherited from xxx 查看从父元素继承下来的样式
+        不是所有的css样式都可以继承,只能继承部分样式
+
+5. 也可以自己对样式进行增删查改复制
+       增: 回车新增样式即可
+      删: 勾选样式
+      修改: 直接修改,有提示,如果是数值类型,上下键切换
+      复制:
+          复制属性,         height
+          复制值,              45px
+          复制键和值,        height: 45px;
+          复制整个样式
+                    height: 45px;
+                    /* font-size: 25px; */
+-->
+<div style="color: green"><span>
+    我是span的内容
+</span></div>
+
+</body>
+</html>

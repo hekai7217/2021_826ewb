@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14-if语句的注意点.html</title>
+    <script>
+
+        /**
+         * 1.对于非布尔类型的数据, 会先转换成布尔类型再判断
+         * 2.对于==/===判断, 将常量写在前面
+         * 3.if/else if/else后面的大括号都可以省略, 但是省略之后只有紧随其后的语句受到控制
+         * 4.在JavaScript中分号(;)也是一条语句(空语句)
+         * 5 if选择结构可以嵌套使用
+         */
+            //
+            // if (null){
+            //     console.log("a");
+            // }else{
+            //     console.log("返回false");
+            // }
+            //
+            // if ("" && !null){
+            //     console.log("a");
+            // }else{
+            //     console.log("返回false");
+            // }
+
+            // let age = 18;
+            // //  规范
+            // if (18 >= age){
+            //     console.log("成年人");
+            // }
+
+            // let a = 1;
+            // if (a > 5) {
+            //     console.log("结果为true");
+            // }
+            // console.log("我是后面的第二行代码")
+
+        let a = 1;
+
+        // 这不是一个if语句结构体    if (a >5); 独立的
+        if (a > 5) ;
+        {
+            console.log("hello");
+        }
+
+
+        // 嵌套if语句
+        let username = prompt("请输入你的账号名称");
+        console.log(typeof  username);
+
+        if ("admin" === username) {
+            let pwd = prompt("请输入你的账号pwd");
+            if ("123" === pwd) {
+                alert("登录成功");
+            } else {
+                alert("密码错误");
+            }
+        } else {
+            alert("账号不对...");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

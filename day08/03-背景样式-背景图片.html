@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-背景样式-背景图片.html</title>
+    <style>
+
+        .b1{
+            height: 400px;
+            width: 400px;
+            background-color: #c79f9f;
+            background-image: url("images/baby_1.jpg");
+        }
+
+        .b2{
+            height: 600px;
+            background-color: #c79f9f;
+            background-image: url("https://n.sinaimg.cn/sports/99_img/dfic/cf0d0fdd/212/w2048h1364/20210804/d770-ac97327dd6e7ab0997f1ff21d2bfc95e.jpg");
+        }
+
+    </style>
+</head>
+<body>
+<!--
+ 1. 如何设置背景图片
+    格式: background-image: url(图片的路径);  专门用于设置背景图片的
+ 快捷键:
+   	bgi: background-image: url(图片的路径);
+ 2. 注意点
+    1. 设置背景图片样式可以使用本地路径,也可以使用网络路径
+    2. 默认情况下背景图片会自动在X轴和Y轴方向上自动平铺填充整个元素
+    3. 如果网页代码中有图片,那么浏览器会请求完网页之后再请求网页中所有的图片,也就是会发起多个对服务器的请求.
+-->
+
+<div class="b1">
+</div>
+
+<div class="b2">
+</div>
+
+</body>
+</html>

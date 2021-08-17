@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-数组注意点.html</title>
+    <script>
+
+        /**
+         * 数组的注意点:
+         *  1.和其它编程语言不同, 如果数组对应的索引中没有存储数据, 默认存储的就是undefined
+         *  2.和其它编程语言不同, JavaScript中访问了数组中不存在的索引不会报错, 会返回undefined
+         *  3.和其它编程语言不同, 当JavaScript中数组的存储空间不够时数组会自动扩容
+         *  4.和其它编程语言不同, JavaScript的数组可以存储不同类型数据
+         *  5.和其它编程语言不同, JavaScript中数组分配的存储空间不一定是连续的
+         */
+        let arr = new Array(3);
+        arr[0] = "hello";
+        console.log(arr[0]);
+        console.log(arr[2]);
+
+        // console.log(arr[0]);
+        // 获取一个不存在的下标    返回 undefined   其他语言中 会报错 (数组下标越界)
+        // console.log(arr[10]);
+
+        // arr[1] = "javascript";
+        // arr[2] = "html";
+        // //  空间不够 会自动扩容
+        // arr[3] = "css";
+        // arr[4] = "sql";
+        // console.log(arr);
+
+        // 存储不同的类型
+        arr[1] = 10;
+        arr[2] = false;
+        arr[3] = null;
+        console.log(arr);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

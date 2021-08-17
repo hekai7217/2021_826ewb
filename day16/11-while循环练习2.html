@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11-while循环练习2.html</title>
+    <script>
+        /**
+         *
+         * 练习2:提示用户输入一个正整数n， 计算1 + 2 + 3 + ...n的和
+         *  思路:
+         *      01 拿到 键盘输入的数据 n
+         *      02 拿到 1 + ... + n的每个数据  循环
+         *      03  累加
+         *             sum += i;
+         */
+        let num = prompt("请输入一个整数?");
+
+        let i = 1;
+        // 存储累加的数值
+        let sum = 0 ;
+        while (i <= num){
+            console.log(i);
+            // sum = sum + i;
+            sum +=i;
+            i++;
+        }
+        console.log("1...n的数据之和:" + sum);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09-while循环注意点.html</title>
+    <script>
+        /**
+         *1.什么是死循环?
+         条件表达式永远为真的循环结构我们称之为死循环
+
+         2.什么是循环体?
+         循环结构后面的{}我们称之为循环体
+
+         3.和if一样对于非Boolean类型的值, 会先转换为Boolean类型再判断
+
+         4.和if一样while 后如果只有一条语句它可以省略大括号和if一样如果省略了后面的{}, 那么只有紧随其后的那条语句受到控制
+         *
+         */
+            // while(true){
+            //     console.log("hello ...");
+            // }
+            // null 转成 false 进行判断
+            // while (null){
+            // 死循环
+            // while (1){
+            //
+            // }
+
+        let num = 0;
+        while (num < 3) {
+            console.log("hello");
+            num++;
+        }
+        console.log("abc")
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08-通配符选择器.html</title>
+    <style>
+            p{
+                background-color: blue;
+            }
+
+            /*h1{*/
+            /*    background-color: blue;*/
+            /*}*/
+
+            /*span{*/
+            /*    background-color: blue;*/
+            /*}*/
+        /*    页面所有的标签 */
+        /**{*/
+        /*    background-color: blue;*/
+        /*}*/
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+    </style>
+</head>
+<body>
+<!--
+1.通配符选择器 【掌握】
+ 什么是通配符选择器?
+ 作用: 选择当前界面中所有的标签,然后设置属性
+ 格式:
+ * {
+    属性: 属性的值;
+ }
+ 特点:
+1. 由于通配符选择器是选择页面上所有的标签,所以在设置样式属性之前会遍历到每一个标签,
+如果当前页面上的标签比较多的时候,那么性能就会非常差,
+所以在企业开发中不推荐使用,如果后期需要同时选择一大批标签,可以考虑使用并集选择器
+2. 在测试的时候可以使用,用来去除一些标签的默认样式,格式如下:
+ * {
+     margin: 0;
+     padding: 0;
+ }
+选择页面中所有的标签，通常用来设置页面的整体样式，例如外边距和内边距
+-->
+<p>hello p标签</p>
+<h1>hello h1标签</h1>
+<span>hello span标签</span>
+
+</body>
+</html>

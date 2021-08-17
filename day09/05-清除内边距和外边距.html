@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-清除内边距和外边距.html</title>
+    <style>
+
+        .b1 {
+            height: 100px;
+            width: 100px;
+            background-color: #ff79ef;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        p, h1 {
+            background-color: lightskyblue;
+            margin: 0;
+        }
+
+        /*    通配符 把所有的  内边距 和外边距 进行清理 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,h2{
+            font-size: 100%;
+            font-weight: normal;
+        }
+
+        /*  把所有的 需要 清除 默认的 外边距和内容的标签进行设置*/
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+</head>
+<body>
+<!--
+ 1. 为什么要去除默认的内边距和外边距?
+    在企业开发中为了更好地对页面进行布局以及计算盒子模型的宽高,在编写样式代码之前的第一步就是去除默认的边距
+
+ 2. 清除边距的格式
+    * {
+           margin: 0;
+           padding: 0;
+     }
+
+ 3. 注意:
+ 使用通配符选择器会选择页面上所有的标签,导致网页性能比较低,
+ 所以建议大家使用我们需要设置清空边距的标签来清空
+ 我们可以直接访问如下网址复制清空样式即可:
+ http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css
+ 在测试开发阶段,可以使用通配符清空所有的边距
+-->
+<div class="b1">hello</div>
+
+<p>
+    hello
+</p>
+
+<h1>hello</h1>
+
+<ul>
+    <li>aaa</li>
+    <li>aaa</li>
+</ul>
+
+
+</body>
+</html>

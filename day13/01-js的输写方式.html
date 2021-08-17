@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+            div{
+                height: 100px;
+                width: 100px;
+                background-color: red;
+            }
+
+    </style>
+
+    <script>
+         // alert("我是 js")
+    </script>
+
+<!--      引入外部的js文件 -->
+    <script src="js/a.js"></script>
+
+</head>
+<body>
+<!--
+1.行内样式: 写在标签内部
+        <div onclick="alert('hello')">
+2.内嵌样式(内联样式) : 写在一对head标签中
+        在 head中写 script 标签 在这里写js代码
+        <script>
+             alert("我是 js")
+        </script>
+3.外链样式: 写在一个单独的.js文件中, 再导入进来
+
+-->
+<div onclick="alert('hello')">
+
+</div>
+</body>
+</html>

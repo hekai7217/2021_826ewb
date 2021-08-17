@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-把数据转成数值类型.html</title>
+    <script>
+        /**
+         *1.将String类型转换为数值类型
+         - 如果字符串中都是数值, 那么就正常转换
+         - 如果字符串是一个空串""/"   ", 那么转换之后是0
+         - 如果字符串中不仅仅是数字, 那么转换之后是NaN
+         2.将Boolean类型转换为数值类型
+         - true转换之后是1
+         - false转换之后是0
+         3.将undefined类型转换为数值类型
+         - 转换之后是NaN
+         4.将null类型转换为数值类型
+         - 转换之后是0
+         空字符串/false/null转换之后都是0
+         字符串中不仅仅是数字/undefined转换之后是NaN
+         其它的正常转换
+         *
+         在JavaScript中如果想将以上的四种基本数据类型转换为数值类型, 常用的方法有三种
+         1.通过Number(常量or变量);方式来转换
+         2.还可以通过数学运算中的+号和-号来转换
+         3.还可以通过parseInt(需要转换的字符串)/parseFloat(需要转换的字符串)
+         */
+            //  1.通过Number(常量or变量);方式来转换
+        let s1 = "123";
+        console.log(s1);
+        let n1 = Number(s1);
+        console.log(n1);
+
+        let s2 = "";
+        let s3 = "   ";
+        let n2 = Number(s2);
+        let n3 = Number(s3);
+        console.log(n2);
+        console.log(n3);
+
+        let s4 = "3.14e";
+        // NaN  Not a Number
+        let n4 = Number(s4);
+        console.log(n4);
+
+        // boolean 转换  true = 1 false = 0
+        let b1 = true;
+        let b2 = false;
+        let n5 = Number(b1);
+        let n6 = Number(b2);
+        console.log(n5);
+        console.log(n6);
+
+        let n7 =Number("123");
+        console.log(n7);
+        let n8 =Number(true);
+        console.log(n8);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

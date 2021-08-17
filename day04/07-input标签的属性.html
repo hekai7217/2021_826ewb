@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07-input标签的属性</title>
+</head>
+<body>
+<!--
+type="text"              表示当前输入表单是一个单行文本框
+type="password"     表示当前输入表单是一个密码表单，用户输入的信息会被实心圆遮挡
+type="hidden"         表示当前 input 表单是隐藏域表单
+
+注意:
+1.有的时候我不希望某些数据用户输入，但是又希望提交到服务器去，因为服务器需要使用，这个时候可以使用隐藏域表单
+
+value="提交" ·  表示当前表单所显示的内容
+autofocus 表示当前组件自动获取鼠标焦点，一个页面只能够有一个输入组件有该属性,也就是说一个页面只能够一个表单组件获取焦点
+placeholder="请输入用户名..." 表示当前组件的提示信息，该提示信息不会干扰用户的输入，和value是不一样的
+size="22" 表示表单的长度(字符长度)
+maxlength="6" 表示表单最大输入的字符的个数
+
+label标签说明:
+1.默认情况下文字和输入框是没有关联关系的, 也就是说点击文字输入框不会聚焦, 如果想点击文字时让对应的输入框聚焦, 那么就需要让文字和输入框进行绑定
+2.要想让输入框和文字绑定在一起, 那么我们可以使用Label标签
+3.绑定的格式:
+3.1将文字利用label标签包裹起来
+3.2给输入框添加一个id属性
+3.3在label标签中通过for属性和输入框中的id进行绑定即可
+  <label for="account">账号:</label><input type="text" id="account">
+-->
+<form action="/server/server.html" method="get">
+<!--    <p>-->
+<!--        用户名:<input type="text" name="username" placeholder="请输入用户名">-->
+<!--    </p>-->
+    <p>
+            <label for="userId">用户名:</label>
+            <input id="userId" type="text" name="username" placeholder="请输入用户名">
+    </p>
+    <p>
+            <input type="hidden" name="phone" value="185xxxxxxx">
+    </p>
+    <p>
+        密码:<input type="password" name="password" placeholder="请输入密码"  maxlength="5">
+    </p>
+
+    <p><input type="submit" value="注册"></p>
+</form>
+</body>
+</html>

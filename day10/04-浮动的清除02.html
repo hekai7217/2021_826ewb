@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-浮动的清除02.html</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            .b1{
+                border: 1px solid #000;
+            }
+
+            .b1 p{
+                height: 40px;
+                width: 60px;
+                background-color: #ff79ef;
+                float: left;
+            }
+        
+            .b2{
+                /*margin-top: 10px;*/
+                border: 1px solid #000;
+                clear: both;
+            }
+
+            .b2 p{
+                height: 40px;
+                width: 60px;
+                background-color: pink;
+                float: left;
+            }
+
+    </style>
+</head>
+<body>
+<!--
+后面的盒子添加clear属性
+可以解决塌陷问题 margin会失效
+-->
+
+<div class="b1">
+    <p>我是p1</p>
+    <p>我是p1</p>
+    <p>我是p1</p>
+</div>
+
+<div class="b2">
+    <p>我是p2</p>
+    <p>我是p2</p>
+    <p>我是p2</p>
+</div>
+
+</body>
+</html>

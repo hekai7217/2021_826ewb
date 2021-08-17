@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-绝对定位的规律.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .father{
+            height: 400px;
+            width: 400px;
+            background-color: khaki;
+            position: relative;
+        }
+
+        .b1{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            position: relative;
+        }
+
+        .son{
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            position: absolute;
+
+            left: 0;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+规律
+1.默认情况下所有的绝对定位的元素, 无论有没有祖先元素, 都会以body作为参考点
+2.如果一个绝对定位的元素有祖先元素, 并且祖先元素也是定位流, 那么这个绝对定位的元素就会以定位流的那个祖先元素作为参考点
+2.1只要是这个绝对定位元素的祖先元素都可以
+2.2指的定位流是指绝对定位/相对定位/固定定位
+2.3定位流中只有静态定位不行
+-->
+<div class="father">
+    <div class="b1">
+        <div class="son">
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-表格标签的属性</title>
+</head>
+<body>
+<!--
+常用属性
+1.宽度和高度的属性
+作用: 只能给table标签和td标签设置宽高
+总结:
+(1)表格的宽度和高度默认是按照内容的尺寸来调整的, 也可以通过给table标签设置width/height属性的方式来手动指定表格的宽度和高度
+(2)如果给td标签设置width/height属性, 会修改当前单元格的宽度和高度, 不会影响整个表格的宽度和高度
+
+2.水平对齐和垂直对齐的属性
+作用: 给表格设置对齐方式
+其中水平对齐可以给table标签和tr标签和td标签使用
+垂直对齐只能给tr标签和td标签使用
+总结:
+(1)给table标签设置align属性, 可以控制表格在水平方向的对齐方式
+(2)给tr标签设置align属性, 可以控制当前行中所有单元格内容的水平方向的对齐方式
+(3)给td标签设置align属性, 可以控制当前单元格中内容所在方向的对齐方式
+注意点: 如果td中设置了align属性, tr中也设置了align属性, 那么单元格中的内容会按照td中设置的来对齐
+(4)给tr标签设置valign属性, 可以控制当前行中所有单元格中的内容, 在垂直方向的对齐方式
+(5)给td标签设置valign属性, 可以控制当前单元格中的内容在垂直方向的对齐方式
+注意点:  如果td中设置了valign属性, tr中也设置了valign属性, 那么单元格中的内容会按照td中设置的来对齐
+-->
+<!--
+ table 给表格设置高宽  width="300" height="200" 表格设置高宽
+ td 给单元格设置高宽    <td width="100">name</td>  单元格设置高宽
+
+ table中align 是水平对齐方式   left，center ，right    控制表格在水平方向的对齐方式
+ tr中align 是水平对齐方式   left，center ，right         制当前行中所有单元格内容的水平方向的对齐方式
+    td标签设置align属性,      left，center ，right        控制当前单元格中内容所在方向的对齐方式
+
+  valign属性,     top,middle,bottom                    控制当前行中所有单元格中的内容, 在垂直方向的对齐方式
+-->
+<table border="1" width="300" height="200" align="center">
+    <!--    第一行 表头-->
+    <tr align="center">
+        <td>id</td>
+<!--        <td width="100">name</td>-->
+        <td>name</td>
+        <td>age</td>
+        <td>gender</td>
+    </tr>
+    <!--   数据展示 -->
+    <tr valign="top">
+        <td align="center">1001</td>
+        <td>张三</td>
+        <td>18</td>
+        <td>男</td>
+    </tr>
+    <tr align="center" valign="middle">
+        <td>1002</td>
+        <td>李四</td>
+        <td>20</td>
+        <td>女</td>
+    </tr>
+</table>
+
+</body>
+</html>

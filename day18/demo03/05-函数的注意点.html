@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-函数的注意点.html</title>
+    <script>
+
+        /**
+         4.return的作用和break相似, 所以return后面不能编写任何语句(永远执行不到)
+         // break作用立即结束switch语句或者循环语句
+         // return作用立即结束当前所在函数
+         01 return 后面不能编写代码
+         02 return 作用立即结束当前所在函数
+         03 return 有返回值的函数 可以返回函数结果
+
+         4.调用函数时实参的个数和形参的个数可以不相同
+         形参: 函数名称() 中的参数
+         实参: 调用函数的时候,传入到函数中的变量
+         */
+
+        // 形参 a,b
+        function getSum(a, b) {
+            console.log(a);
+            console.log(b);
+            return a + b;
+        }
+
+        //调用函数
+        // 调用函数插入的值 就是 实参
+        // let res1 = getSum(1, 4);
+        // console.log(res1);
+
+        // 实参的个数和形参一般都是 一样
+        // 实参 数据变少
+        let a = 10;
+        let b = 20;
+        let c = 30;
+        let res2 = getSum(a)
+        let res3 = getSum(a,b,c);
+        console.log(res2);  // NaN
+        console.log(res3); // c变量多余了
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

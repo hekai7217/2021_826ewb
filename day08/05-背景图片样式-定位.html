@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-背景图片样式-定位.html</title>
+    <style>
+            .b1{
+                height: 400px;
+                width: 400px;
+                border: 1px solid #000;
+                background-color: skyblue;
+                background-image: url(images/baby_1.jpg);
+                background-repeat: no-repeat;
+
+                /*  取值 可以给方位词 */
+                background-position: right top;
+                background-position: center center;
+                background-position: center bottom;
+
+            /*   像素:  */
+                background-position: 0 0;
+                background-position: 100px 100px;
+                background-position: -60px -30px;
+                background-position: 254px -30px;
+            }
+
+            .b2{
+                width: 2000px;
+                height: 1600px;
+                background-image: url("https://n.sinaimg.cn/sports/99_img/dfic/cf0d0fdd/212/w2048h1364/20210804/d770-ac97327dd6e7ab0997f1ff21d2bfc95e.jpg");
+                background-position: center center;
+
+            }
+    </style>
+</head>
+<body>
+<!--
+1. 如何设置背景图片的位置 [背景定位]
+    格式: background-position: 水平方向 垂直方向; 专门用于设置背景图片的位置
+    快捷键: bgp: background-position: ;
+
+2. 取值:
+    a. 方位单词: background-position: right bottom;
+        水平方向: left center right
+        垂直方向: top center bottom
+    b. 像素: background-position: -100px 100px;
+        注意:
+        1. 如果使用像素取值,千万记住单位不能够省略, 如果是0 0 ,单位可以省略
+        2. 取值可以是负数
+        3. 还可以通过CSS调试找到自己想要的位置
+3. 注意:
+    1. 如果同时设置了背景颜色和背景图片,那么背景图片会覆盖背景颜色
+    2. 背景图片定位一般用于设置图片的位置的时候非常方便
+    3. 一般在开发中希望图片能够始终居中显示,那么可以设置背景定位 center top
+    4. 背景图片和img标签的区别:
+        a. 背景图片不会占用浏览器位置,但是img标签会占浏览器的位置
+        b. 背景图片可以通过定位属性灵活控制显示的位置, img标签是方便的
+        c. 背景图片仅仅是一个样式属性,没有任何的语义, 而img标签属于HTML标签,是用于告诉浏览器当前超文本是当做一张图片来解析,是有语义,并且有利于搜索引擎优化
+-->
+<div class="b1">
+
+</div>
+
+<div class="b2">
+
+</div>
+
+
+</body>
+</html>

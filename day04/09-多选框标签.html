@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09-多选框按钮.html</title>
+</head>
+<body>
+<!--
+type="checkbox" 表示单签表单是复选框按钮表单
+复选按钮输入标签: [多选多, 一键多值]
+注意:
+1.如果希望多个复选框是一组的效果，必须指定name属性为同一个值
+2.复选框提交的参数是 一键 多值类型
+3.表单提交的参数格式:  &hobby=cs&hobby=dnf&hobby=lol
+   value 是提交到服务器的值
+   游泳、爬山  这个文本是页面显示的内容
+4.checked属性表示某个复选按钮默认选中
+-->
+<form action="server/server.html" method="get">
+
+    <p>
+        爱好:
+        <input type="checkbox" name="fav" value="游泳" checked> 游泳
+        <input type="checkbox" name="fav" value="跑步" checked> 跑步
+        <input type="checkbox" name="fav" value="爬山"> 爬山
+        <input type="checkbox" name="fav" value="骑自行车"> 骑自行车
+    </p>
+    
+    <p>
+        <input type="submit">
+    </p>
+
+</form>
+
+</body>
+</html>

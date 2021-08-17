@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-video标签</title>
+</head>
+<body>
+
+<!--
+video标签
+作用: 播放视频
+
+格式一:
+<video src="">
+</video>
+
+video标签的属性
+src: 用于告诉video标签需要播放的视频地址
+autoplay: 用于告诉video标签是否需要自动播放视频
+controls: 用于告诉video标签是否需要显示控制条
+poster: 用于告诉video标签视频没有播放之前显示的占位图片
+loop: 一般用于做广告视频, 用于告诉video标签视频播放完毕之后是否需要循环播放
+preload: 预加载视频, 但是需要注意preload和autoplay相冲突, 如果设置了autoplay属性, 那么preload属性就会失效
+muted:静音
+width/height: 和img标签中的一模一样
+-->
+<!--<video  poster src="video/movie.ogv" controls="controls" width="300" height="300"></video>-->
+
+<!--<video width="800" height="600" controls>-->
+<!--    <source src="../video/01.使用完整结构化表格标签编写表格.mp4" type="video/mp6"/>-->
+<!--    <source src="../video/01.使用完整结构化表格标签编写表格.ogg" type="video/ogg"/>-->
+<!--    <source src="../video/01.使用完整结构化表格标签编写表格.avi" type="video/x-msvideo"/>-->
+<!--    Your browser does not support the audio element.-->
+<!--</video>-->
+
+<!--视频 窗口   直接给 网络地址 可以看视频 -->
+<iframe height=498 width=510 src='https://player.youku.com/embed/XNTE3MTc1MDg2MA==' frameborder=0 'allowfullscreen'>
+</iframe>
+
+</body>
+</html>

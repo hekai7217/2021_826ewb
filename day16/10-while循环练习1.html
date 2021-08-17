@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10-while循环练习1.html</title>
+    <script>
+        /**
+         * 练习1:打印1～100之间 7的倍数，并统计个数
+         *      01 循环 拿到 1 -100 的数据
+         *      02  判断每个数据是否可以整除 7
+         *              a % 7 == 0
+         *      03 进行统计
+
+         */
+        let num = 1;
+        let count = 0;
+        while (num <= 100) {
+            //  判断 是否整除7
+            if (num % 7 === 0) {
+                console.log(num)
+                // 进行统计 个数
+                count++;
+            }
+            //条件控制不能忘了
+            num++;
+        }
+
+        console.log("1-100整除7 的个数是:" + count);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

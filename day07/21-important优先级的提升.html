@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>21-important优先级的提升.html</title>
+    <style>
+            #p1{
+                color: #ff79ef;
+                font-size: 20px;
+                background-color: skyblue;
+            }
+
+            div{
+                /*  把color的优先级提升到最高 */
+                color: green !important;
+                font-size: 30px !important;
+            }
+
+            /*  间接选中 设置 importan 没有用 */
+            /*body{*/
+            /*    color: pink !important;*/
+            /*}*/
+    </style>
+</head>
+<body>
+<!--
+4.important提升样式优先级
+1. 什么是 !important
+    专门用于提升某个直接选中标签的选择器中某个单独属性的优先级的, 可以将该属性的优先级提升到最高级别.
+  	注意:
+   	1. !important只能够用于直接选中,对于间接选中没有效果
+   	2. 统配符选择器也是算直接选中的.
+    3. !important只能够提升指定的单独属性的优先级,其他的属性并不会得到提升
+-->
+<div id="p1" style="color: yellow">
+    hello div
+</div>
+
+</body>
+</html>

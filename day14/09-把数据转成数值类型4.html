@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /**
+         3.将undefined类型转换为数值类型
+         - 转换之后是NaN
+         4.将null类型转换为数值类型
+         - 转换之后是0
+         空字符串/false/null转换之后都是0
+         字符串中不仅仅是数字/undefined转换之后是NaN
+         其它的正常转换
+         */
+        let a = undefined;
+        let n1 =Number(a)
+        console.log(n1);
+
+        //   空字符串/false/null转换之后都是0
+       let n2 = Number(null)
+        console.log(n2);
+
+       let n3 = Number("");
+        console.log(n3);
+       let n4 = Number("      ");
+        console.log(n4);
+       let n5 = Number(false);
+        console.log(n5);
+
+        let n6 = Number("a123");
+        console.log(n6);
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

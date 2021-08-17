@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07-2d转换.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            list-style-type: none;
+            width: 100px;
+            margin: 0px auto;
+            border: 1px solid #000;
+        }
+
+        ul li{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            margin-top: 100px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+
+        }
+
+        li:nth-of-type(2){
+            /*
+            transform  2d转换
+                      对元素进行移动、缩放、转动、拉长或拉伸
+
+            translate(x)  水平方向的平移
+            translate(x,y)  水平方向的平移
+            */
+            /*transform: translate(100px);*/
+            transform: translate(100px,100px);
+        }
+
+        li:nth-of-type(3){
+
+            /*
+             transform  2d转换
+                      对元素进行移动、缩放、转动、拉长或拉伸
+            scale 缩放   一个值  高宽的缩放
+            scale 值如果大于 1  是 放大  如果小于 1  缩小
+            scale(x,y)  x 宽度的缩放     y高度的缩放
+            */
+            /*transform: scale(0.5);*/
+            transform: scale(0.5,2);
+        }
+
+        li:nth-of-type(4){
+
+            /*
+             transform  2d转换
+                      对元素进行移动、缩放、转动
+              rotate  旋转  degree  角度
+            /*transform: rotate(0.5);*/
+            transform: rotate(-30deg);
+        }
+
+        li:nth-of-type(5){
+
+            /*
+             transform  2d转换
+                  先平移在旋转
+          */
+            /*transform: translate(100px) rotate(30deg);*/
+            transform:  rotate(30deg) translate(100px);
+        }
+
+    </style>
+</head>
+<body>
+
+<ul>
+    <li>正常</li>
+    <li>平移</li>
+    <li>缩放</li>
+    <li>旋转</li>
+    <li>综合</li>
+</ul>
+
+</body>
+</html>

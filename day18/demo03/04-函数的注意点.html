@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-函数的注意点.html</title>
+    <script>
+        /**
+         * 1. 一个函数可以有形参也可以没有形参(零个或多个)
+         *     形参: 函数中() 中定义的变量
+         *  2.一个函数可以有返回值也可以没有返回值
+         */
+
+        // 没有形参的函数
+        function say() {
+            console.log("say hello");
+        }
+
+        say();
+
+        // 有形参的函数
+        function eat(food) {
+            console.log("今天吃:" + food);
+        }
+        eat("面条");
+
+        // 函数有返回值 需要使用return 返回结果
+        function getSum(a,b) {
+            return a + b;
+        }
+
+        // getSum() 调用函数     return  1 + 3  结果为 4
+        // 把 结果4 赋值给变量  res
+        let  res = getSum(1,3);
+        // 打印res
+        console.log(res);
+
+        // 没有返回值的函数 返回的是undefined
+        let res2 = say();
+        console.log(res2);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

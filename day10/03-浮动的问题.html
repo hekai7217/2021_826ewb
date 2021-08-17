@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-浮动的问题.html</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+    
+            div{
+                border: 1px solid #000;
+            }
+            
+            .b1{
+                height: 30px;
+                width: 100px;
+                background-color: #ff79ef;
+            }
+
+            .b2{
+                height: 30px;
+                width: 100px;
+                background-color: #ff79ef;
+                float: left;
+            }
+    </style>
+</head>
+<body>
+<!--
+1.在标准流中内容的高度可以撑起父元素的高度
+2.在浮动流中浮动的元素是不可以撑起父元素的高度的
+-->
+
+<div>
+    <p class="b1">hello p1</p>
+</div>
+
+
+<div>
+    <p class="b2">hello p2</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10-并集选择器.html</title>
+    <style>
+
+        /*
+        h1{
+            background-color: #ff79ef;
+            color: white;
+        }
+
+        p{
+            background-color: #ff79ef;
+            color: white;
+        }
+
+        span{
+            background-color: #ff79ef;
+            color: white;
+        }
+        */
+        /* 多个选择器是样式一行 写在一起 */
+        .p2,#p1,span{
+            background-color: #ff79ef;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+<!--
+什么是并集选择器.
+选择页面中多个选择器，每个选择器使用逗号隔开，一般用来抽取多个标签的共同样式
+格式:
+选择器1,选择器2{
+    属性:值;
+}
+总结:
+a. 并集选择器使用,号连接多个选择器
+b. 并集选择器中的每一个选择器可以是标签,也可以是id选择器,还可以是类选择器
+c. 并集选择器相对通配符选择器来说效率更高
+d. 并集选择器一般用来抽取多个标签的共同样式
+-->
+<p id="p1">我是张三</p>
+<h1 class="p2">我是h1标签</h1>
+<span>我是span标签</span>
+</body>
+</html>

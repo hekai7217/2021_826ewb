@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-02-相对定位.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .b1{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+
+            /* 相对定位 : 相对于自己以前在标准流中的位置来移动*/
+            position: relative;
+        /*     设置位置  水平方向 left/right*/
+        /*     设置位置  垂直方向 top/bottom*/
+        /*    left: 100px;*/
+            right: -100px;
+            top: 100px;
+            /*margin-top: 20px;*/
+            /* 元素宽度变大 */
+            padding-top: 20px;
+        }
+
+        .b2 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        .b3 {
+            background-color: pink;
+            position: relative;
+
+            left: 100px;
+            top: 20px;
+
+        }
+    </style>
+</head>
+<body>
+<!--
+2.什么是相对定位?
+相对定位就是相对于自己以前在标准流中的位置来移动
+
+相对定位注意点
+3.1相对定位是不脱离标准流的, 会继续在标准流中占用一份空间
+3.2在相对定位中同一个方向上的定位属性只能使用一个
+
+3.3由于相对定位是不脱离标准流的, 所以在相对定位中是区分块级元素/行内元素/行内块级元素
+3.4由于相对定位是不脱离标准流的, 并且相对定位的元素会占用标准流中的位置, 所以当给相对定位的元素设置margin/padding等属性的时会影响到标准流的布局
+
+-->
+<div class="b1"></div>
+<div class="b2"></div>
+<span class="b3">span</span>
+
+</body>
+</html>

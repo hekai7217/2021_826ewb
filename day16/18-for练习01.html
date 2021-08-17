@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>18-for练习01.html</title>
+    <script>
+
+        /**
+         *
+         练习1:打印1～100之间 7的倍数，并统计个数
+         练习2:提示用户输入一个正整数n， 计算1 + 2 + 3 + ...n的和
+         */
+        // let count = 0
+        // for(let a = 1 ; a <=100;a ++){
+        //     if (a % 7 === 0 ){
+        //         console.log(a);
+        //         count ++;
+        //     }
+        // }
+        // console.log("1～100之间 7的倍数，统计个数:" + count);
+
+        //   练习2:提示用户输入一个正整数n， 计算1 + 2 + 3 + ...n的和
+
+        let  num = prompt("请输入整数?");
+        let sum = 0 ;
+        for (let a = 1 ; a <=num;a ++){
+                sum += a;
+        }
+        console.log("计算1 + 2 + 3 + ...n的和:" + sum);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

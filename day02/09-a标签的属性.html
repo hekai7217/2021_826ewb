@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09-a标签的属性.html</title>
+</head>
+<body>
+<!--
+    href 属性： 给 URL地址 不能省略
+        href 可以和Javascript写在一起
+
+    Target属性: 作用就是专门用于控制页面如何跳转。
+    常用取值:
+    _self: 用于在当前选项卡进行跳转。不会新建一个页面，默认就是_self
+    _blank: 用于在新的选项卡中跳转，也就是新建一个页面进行跳转。
+    title属性:和img标签的title属性一样，用来设置鼠标悬停时显示的提示文本。
+
+    概述: 如果某个超链接点击之后不会跳转，那我们称之为假链接。
+    作用: 在开发的时候如果页面还没有确定某个链接具体的跳转地址，那么我们可以使用假链接来替代。
+    格式: 存在两种格式的假链接。
+    1. <a href=”#”/>
+    2. <a href=”javascript:”/>
+    两种格式假链接的区别:
+    #这种假链接会自动回到网页的顶部，而javaScript:这种假链接不会自动回到网页顶部。
+    -->
+
+<a href="http://www.baidu.com">百度</a>
+<a href="http://www.baidu.com" target="_self" title="可以去百度吗">百度1</a>
+<a href="http://www.baidu.com" target="_blank">百度2</a>
+
+<a href="javascript:">当前页面不跳转返回值为空</a>
+<a href="javascript:void(0)">当前页面不跳转，无返回值</a>
+<a href="javascript:alert('不能跳转，出发了函数')">当前页面不跳转，触发函数</a>
+
+<img src="img/yangmi2.webp" alt="">
+<br>
+<img src="img/yangmi2.webp" alt="">
+<br>
+<img src="img/yangmi2.webp" alt="">
+<br>
+<img src="img/yangmi2.webp" alt="">
+<a href="#">baidu1</a>
+<a href="javascript:">baidu2</a>
+</body>
+</html>

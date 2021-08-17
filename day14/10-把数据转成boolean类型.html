@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10-把数据转成boolean类型.html</title>
+    <script>
+
+        /**
+         * 1.将String类型转换为布尔类型
+         只要字符串中有内容都会转换为true, 只有字符串中没有内容才会转换为false
+         2.将Number类型转换为布尔类型
+         只有数值是0才会转换为false, 其它的都会转换为true
+         如果是NaN也会转换为false
+         3.将undefined类型转换为布尔类型
+         undefined会转换为false
+         4.将null类型转换为布尔类型
+         null会转换为false
+         空字符串/0/NaN/undefined/null 会转换成false, 其它的都是true
+         在JavaScript中如果想将基本数据类型转换为布尔类型, 那么只需要调用Boolean(常量or变量)
+         *
+         */
+            // 字符串从转换
+            // let s1 = "";
+            // let  b1 = Boolean(s1);
+            // let s2 = "a";
+            // let  b2 = Boolean(s2);
+            // console.log(b1);
+            // console.log(b2);
+            //
+            // let s3 = "123";
+            // let  b3 = Boolean(s3);
+            // let  b4 = Boolean("123");
+            // console.log(b3);
+
+            // number的转换成 boolean   0 是false 其他的都是true
+            //   如果是NaN也会转换为false
+        let b1 = Boolean(0)
+        console.log(b1);
+
+        let b2 = Boolean(100)
+        let b3 = Boolean(10)
+        console.log(b2);
+        console.log(b3);
+
+        let b4 = Boolean(NaN);
+        console.log(b4);
+
+        // 特殊 undefined / null 转成false
+        let b5 = Boolean(undefined);
+        let b6 = Boolean(null);
+        console.log(b5);
+        console.log(b6);
+
+
+        /**
+         * 总结:
+         *
+         *  1 数据转成字符串
+                      1.对于Number类型和Boolean类型来说, 可以通过 变量名称.toString()的方式来转换
+                               undefined.null 不能通过toString()
+                      2.可以通过String(常量or变量);转换为字符串
+                      3.还可以通过 变量or常量 + "" / 变量or常量 + ''转换为字符串
+                                通过这个进行转换 String(常量or变量)
+
+         *  2. 数据转成 数值
+         *                   空字符串/false/null转换之后都是0
+                             字符串中不仅仅是数字/undefined转换之后是NaN
+                             其它的正常转换
+
+         转换的3中方式
+                             1.通过Number(常量or变量);方式来转换
+                             2.还可以通过数学运算中的+号和-号来转换
+                             3.还可以通过parseInt(需要转换的字符串)/parseFloat(需要转换的字符串)
+                                    parseInt(需要转换的字符串)
+                                    12.3f ===> 12  转成int (从前到获取数值,如果有非数字停止获取数值)
+                                    parseFloat(需要转换的字符串)
+                                    12.3f ===> 12.3  转成小数 (从前到获取数值,如果有非数字停止获取数值)
+                                    a12.3f ===> 12.3  NaN (从前到获取数值,如果有非数字停止获取数值,返回的是NaN)
+                                    undefined/null 转成 NaN
+
+         *  3.数据转成 boolean
+         *   空字符串/0/NaN/undefined/null 会转换成false, 其它的都是true
+         *
+         */
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

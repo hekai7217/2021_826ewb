@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-js书写方式注意事项.html</title>
+
+    <script>
+        window.onload = function () {
+                // 操作界面元素的JavaScript
+            document.getElementById("box1").innerText = "我可以操作 页面的元素 "
+        }
+    </script>
+
+<!--     如果引入了外部的 js文件  然后 这里标签中不能写 js代码 无效 -->
+<!--    <script src="js/a.js">-->
+<!--            alert("我是js")-->
+<!--    </script>-->
+
+    <script src="js/a.js"/>
+
+</head>
+<body>
+<!--
+1.不推荐直接将JavaScript代码书写到标签内部
+
+2.默认情况下浏览器会从上至下的解析网页, 所以如果将JavaScript写到一对head标签中, 并且需要通过JavaScript代码操作界面上的元素, 那么就不能直接书写JavaScript代码, 否则无效
+
+2.1如果想将JavaScript写到一对head标签中, 并且需要在JavaScript代码中操作界面上的元素, 那么必须加上window.onload = function(){操作界面元素的JavaScript}
+2.2window.onload的含义: 等到界面上所有的内容都加载完毕再执行{}中的代码
+
+3如果需要在一对script标签中编写JavaScript代码, 那么就不能同时通过script标签再导入其它的.js文件, 否则书写的JavaScript代码无效
+4. script 可以在网页中很多地方写,一般推荐写在 head标签中
+5. <script src="js/a.js"></script> 不能省略后面的闭合标签 ,省略了不能把js文件导入进来
+-->
+<div id="box1">hello</div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14-浮动的特点.html</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            float: left;
+        }
+
+        /*
+                行类元素 默认是不支持高宽
+                如果进行了浮动  可以设置高宽
+        */
+        span {
+            height: 100px;
+            width: 100px;
+            background-color: #ff79ef;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<!--
+浮动特点:
+在浮动流中是不区分块级元素/行内元素/行内块级元素的 无论是级元素/行内元素/行内块级元素都可以水平排版
+在浮动流中无论是块级元素/行内元素/行内块级元素都可以设置宽高
+3.综上所述, 浮动流中的元素和标准流中的行内块级元素很像
+-->
+<div>
+    1
+</div>
+<div>
+    2
+</div>
+<div>
+    3
+</div>
+
+<span>1</span>
+<span>2</span>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10-display属性.html</title>
+
+    <style>
+
+        div,h1,p{
+            height: 30px;
+            width: 200px;
+            background-color: blue;
+
+            /*   把块级元素修改为了 行内元素*/
+            display: inline;
+        }
+
+        span,a{
+            width: 300px;
+            height: 60px;
+            background-color: skyblue;
+            border: 1px solid #000;
+
+            /*  把行内元素修改为了块级元素    独占一行 可以支持高宽*/
+            display: block;
+        }
+
+        img{
+            height: 100px;
+        }
+        .b1{
+            width: 100px;
+            height: 100px;
+
+            /*  行内块级     支持宽高  不能独占一行*/
+            display: inline-block;
+        }
+
+        .b2{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+Display属性
+在HTML中HTML将所有的标签分为两类, 分别是容器级和文本级
+在CSS中CSS也将所有的标签分为两类, 分别是块级元素和行内元素
+
+1.什么是块级元素, 什么是行内元素?
+块级元素会独占一行
+行内元素不会独占一行
+
+容器级的标签
+div h ul ol dl li dt dd ...
+文本级的标签
+span p buis stong em ins del ...
+
+块级元素
+p div h ul ol dl li dt dd
+行内元素
+span buis strong em ins del
+
+2.块级元素和行内元素的区别?
+(1) 块级元素
+独占一行
+如果没有设置宽度, 那么默认和父元素一样宽
+如果设置了宽高, 那么就按照设置的来显示
+
+(2)行内元素
+不会独占一行
+如果没有设置宽度, 那么默认和内容一样宽
+行内元素是不可以设置宽度和高度的
+
+(3)行内块级元素
+为了能够让元素既能够不独占一行, 又可以设置宽度和高度, 那么就出现了行内块级元素
+display 属性设置元素如何显
+
+设置块级元素和行级元素的转变（block、inline-block）
+       可以把行内元素 修改为 块级元素
+控制块元素排列到一行 inline-block
+
+-->
+<!--  块级元素-->
+<!--<div>-->
+<!--    hello-->
+<!--</div>-->
+<!--<p>-->
+<!--    我是p标签-->
+<!--</p>-->
+<!--<h1>我是h标签</h1>-->
+<!--&lt;!&ndash;  行内元素&ndash;&gt;-->
+<!--<span>我是span</span>-->
+<!--<a href="#">我是a</a>-->
+
+<!--<img src="images/baby_1.jpg" alt="">-->
+<!--<img src="images/baby_1.jpg" alt="">-->
+
+<span>
+    我是 span标签
+</span>
+
+<a href="#">
+    我是 a标签
+</a>
+
+<h1>我是h1 标签</h1>
+<p>我是p 标签</p>
+
+<span class="b1">
+    我是 span标签
+</span>
+<span class="b1">
+    我是 span标签
+</span>
+
+<div class="b2">
+    我是div
+</div>
+
+
+</body>
+</html>

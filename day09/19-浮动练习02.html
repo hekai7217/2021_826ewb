@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>19-浮动练习02.html</title>
+
+    <style>
+
+            *{
+                margin: 0;
+                padding:0;
+            }
+
+            .container{
+                width: 600px;
+                height: 260px;
+                margin: 50px auto;
+            }
+
+            .container .header{
+                width: 600px;
+                height: 60px;
+            }
+
+            .container .header h1{
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            .container .header .left{
+                float: left;
+            }
+
+            .container .header .right{
+                float: right;
+            }
+
+            .container ul{
+                list-style-type: none;
+                width: 600px;
+                height: 200px;
+                padding-left: 20px;
+            }
+
+            .container ul li{
+                width: 300px;
+                height: 120px;
+                float: left;
+            }
+
+            .container ul li img{
+                height: 90px;
+                width: 236px;
+            }
+
+            .container ul li p{
+                font-size: 12px;
+            }
+
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1 class="left">热门活动</h1>
+        <h1 class="right">更多</h1>
+    </div>
+
+    <ul>
+        <li>
+            <img src="images/img1.png">
+            <p>推荐活动 | 原创音乐现金榜T榜</p>
+        </li>
+        <li>
+            <img src="images/img2.png">
+            <p>推荐节目|《TAImusic》爆笑来袭</p>
+        </li>
+        <li>
+            <img src="images/img3.png">
+            <p>推荐歌单 | 继续宠爱张国荣</p>
+        </li>
+        <li>
+            <img src="images/img4.png">
+            <p>推荐活动| 330金属音乐巡演 成都小酒馆音乐空间</p>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

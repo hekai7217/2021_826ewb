@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-练习.html</title>
+    <script>
+        /**
+         * 6.找出5--200中能够被6整除的数,并求和
+         *
+         *  01 循环 拿到 5 -200 的 数据
+         *  02 判断 能够被6整除
+         *  03  求和
+         */
+        let num = 5 ;
+        let sum = 0 ;
+        while(num <= 200){
+            if (num % 6 ===0){
+                console.log(num);
+                sum += num;
+            }
+            num++;
+        }
+        console.log("出5--200中能够被6整除的数,并求和:" + sum);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

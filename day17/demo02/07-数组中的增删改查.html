@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07-数组中的增删改查.html</title>
+    <script>
+
+        let arr = ["梧桐山", "深圳湾", "三洲田", "大鹏"];
+
+        //  需求: 要求在数组最前面添加一条数据 (增)
+        // arr[-1] = "福田";
+        // arr 提供了方法    unshift()  在数组的前面添加内容, 会将新增内容之后当前数组的长度返回给我们
+        // let len = arr.unshift("市民中心");
+        // console.log(len);
+
+        // arr.unshift("市民中心","会展中心");
+        // console.log(arr);
+
+        //要求删除数组最后一条数据 (删)
+        // 数组的pop方法可以删除数组中的最后一条数据,  并且将删除的数据返回给我们
+       // let data =  arr.pop();
+       //  console.log(data);
+       //  console.log(arr);
+
+        // 需求: 要求删除数组最前面一条数据 (删)
+        // shift() 头部删除  返回 删除的内容
+        // let data =arr.shift();
+        // console.log(data);
+        // console.log(arr);
+
+        // 需求: 要求删除数组中索引为1的数据 (删)
+
+        //  arr.splice()  给2个参数 可以删除内容
+        // 参数1  从哪里开始   参数2: 删除多个个数据
+        let a =arr.splice(1,1);
+        console.log(a);
+        // console.log(arr);
+
+        //删除所有的数据
+        // let  a = arr.splice(0,arr.length);
+        // console.log(a);
+
+        console.log(arr);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-浮动的清除01.html</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            .b1{
+                height: 30px;
+                border: 1px solid #000;
+            }
+
+            .b1 p{
+                height: 40px;
+                width: 60px;
+                background-color: #ff79ef;
+                float: left;
+            }
+        
+            .b2{
+                border: 1px solid #000;
+            }
+
+            .b2 p{
+                height: 40px;
+                width: 60px;
+                background-color: pink;
+                float: left;
+            }
+                
+
+    </style>
+</head>
+<body>
+<!--
+解决：父盒子有了高度，前面的浮动不能影响后面
+给第一个父盒子设置高度
+
+这种height清除浮动的方法，只适合父盒子高度固定的情况。
+注意点: 在企业开发中, 我们能不写高度就不写高度, 所以这种方式用得很少
+
+-->
+
+<div class="b1">
+    <p>我是p1</p>
+    <p>我是p1</p>
+    <p>我是p1</p>
+</div>
+
+<div class="b2">
+    <p>我是p2</p>
+    <p>我是p2</p>
+    <p>我是p2</p>
+</div>
+
+</body>
+</html>

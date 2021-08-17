@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>17-自增的前后区别.html</title>
+    <script>
+
+        /**
+         *
+         3.自增和自减写在变量的前面和后面的区别?
+         写在变量的后面, 表示变量先参与其它的运算, 然后再自增或者自减
+         写在变量的前面, 表示变量先自增或者自减, 然后再参与其它的运算
+         */
+        let  a = 5;
+        // 变量先参与其它的运算  先赋值运算
+        // let  b = a++;     // b = 5 , a = 6
+        // console.log(b);
+        // // 变量先变量先自增或者自减  在运算
+        // // a = 6  先自增   在运算  赋值运算
+        // let  c = ++a;
+        // console.log(c);
+
+        // b = a + 5 = 10    a = 6
+        let b = a++ + 5;
+        console.log(b);  // 10
+
+        // a = 6 + 1 = 7 + 5 = 12
+        let c = ++a + 5;
+        console.log(c); // 12
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

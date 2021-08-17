@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-数组中的增删改查.html</title>
+    <script>
+        let arr = ["梧桐山", "深圳湾", "三洲田", "大鹏"];
+
+        //需求: 获取数组中索引为1的那个数据 (查)
+        // console.log(arr[1]);
+
+        // 需求: 将索引为1的数据修改为m (改)
+        // arr[1] = "南山科技园";
+        // console.log(arr);
+
+        // 需求: 将索引为1的数据修改为d, 索引为2的修改为e (改)
+        // arr[1] = "南山科技园";
+        // arr[2] = "莲花山";
+        // console.log(arr);
+
+        /**
+         *  splice(参数1,参数2,...参数3)
+         *    参数1 从哪里开始
+         *    参数2 你要替换几个数据
+         *    参数3 替换的内容
+         */
+        // splice()  替换
+        // arr.splice(1,2,"莲花山","北站");
+        // arr.splice(1,3,"莲花山","北站","东门");
+        // console.log(arr);
+
+        // 需求: 要求在数组最后添加一条数据 (增)
+
+        // arr[arr.length] = "南山古城";
+        // console.log(arr);
+        // arr[arr.length] = "海上世界";
+        // console.log(arr);
+
+        //提供了方法   push() 方法 可以给数组末尾添加一个内容 返回数组的长度
+        // let len = arr.push("盐田");
+        // console.log(len);
+        // console.log(arr);
+        // push() 可以添加多个
+        // arr.push("深圳书城");
+        // arr.push("宝安欢乐港");
+
+        // push() 可以直接添加多个内容
+        arr.push("深圳书城","宝安欢乐港");
+        console.log(arr);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

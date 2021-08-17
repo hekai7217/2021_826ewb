@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14-定义列表.html</title>
+</head>
+<body>
+<!--
+定义列表
+作用: 给一堆数据添加列表语义
+其中通过dt标签定义列表中的所有标题, 然后再通过dd标签给每个标题添加描述信息
+
+定义列表的格式:
+<dl>
+    <dt></dt>
+    <dd></dd>
+    <dt></dt>
+    <dd></dd>
+</dl>
+格式说明:
+其实dt和dd都是英文的缩写
+dt是英文definition title的缩写, 所以dt的含义就是用来定义列表中的标题
+dd是英文definition description的缩写, 所以dd的含义就是用来定义标题对应的描述的
+
+总结
+1.和ul/ol一样, dl和dt/dd是一个整体, 所以他们一般情况下不会单独出现, 都是一起出现.
+2.和ul/ol一样, 由于dl和dt/dd是一个组合标签, 所以dl中建议只放dt和dd标签
+3.和li标签一样, 我们可以在dt和dd标签中继续添加其它标签
+4.定义列表的应用场景
+(1)做网站尾部的相关信息
+(2)做图文混排
+-->
+<dl>
+    <dt>计算学院</dt>
+    <dd>软件工程</dd>
+    <dd>计算机科学</dd>
+    <dd>
+        <img src="./img/yangmi2.webp" alt="">
+    </dd>
+
+    <dt>医学学院</dt>
+    <dd>药物工程</dd>
+    <dd>临床科学</dd>
+
+</dl>
+
+
+<dl>
+    <dt>小米之家</dt>
+    <dd>服务网点</dd>
+    <dd>授权体验店</dd>
+    <dd>关于小米</dd>
+</dl>
+
+<dl>
+    <dt>了解小米</dt>
+    <dd>加入小米</dd>
+    <dd>投资者关系</dd>
+    <dd>企业社会责任</dd>
+    <dd>廉洁举报</dd>
+</dl>
+
+</body>
+</html>

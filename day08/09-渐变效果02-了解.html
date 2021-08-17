@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09-渐变效果02-了解.html</title>
+    <style>
+
+            .b1{
+                width: 200px;
+                height: 200px;
+
+                /* 中心点散发 */
+                background: radial-gradient(red,green);
+
+                /*  设置单词从 指定的位置进行散发*/
+                background: radial-gradient(at left top,green,yellow);
+                background: radial-gradient(at 50px 50px,green,skyblue);
+
+                /* 可以 给指定的 形状 */
+                background: radial-gradient(ellipse,green,blue);
+            }
+
+    </style>
+</head>
+<body>
+<!--
+2.radial-gradient径向渐变
+1. 什么是径向渐变?
+    指的是从某个点出发向四周发散渐变
+
+2. 注意点
+a. 默认情况下会从中心点向四周发散
+background: radial-gradient(red,green);
+
+    b. 我们可以自己手动设置发散中心点的位置
+        (1) 单词,例如 at top left
+     	background: radial-gradient(at top left,green,red);
+(2)像素, 例如 at 100px 200px
+background: radial-gradient(at 50px 50px,green,red);
+
+   c. 我们也可以设置渐变色的范围
+   d. 我们也可以设置渐变色的形状,有椭圆和圆, 椭圆是ellipse,圆circle
+background: radial-gradient(ellipse,green,red);
+
+圆形或椭圆形渐变，颜色不再沿着一条直线变化，而是从一个起点朝所有方向混合
+background: radial-gradient(center, shape size, start-color, ..., last-color);
+background: radial-gradient(red, green, blue); /* 标准的语法 */
+-->
+
+<div class="b1">
+
+
+</div>
+
+</body>
+</html>

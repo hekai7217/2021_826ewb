@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15-浮动的排序规则.html</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            .b1{
+                height: 100px;
+                width: 100px;
+                background-color: red;
+                /* 浮动后 脱离标准流 不在 标准流中占用位置*/
+                float: left;
+            }
+
+            .b2{
+                height: 150px;
+                width: 150px;
+                background-color: skyblue;
+                float: left;
+            }
+
+            .b3{
+                height: 200px;
+                width: 200px;
+                background-color: yellow;
+                float: right;
+            }
+
+            .b4{
+                height: 250px;
+                width: 250px;
+                background-color: deeppink;
+                float: right;
+            }
+
+    </style>
+</head>
+<body>
+<!--
+浮动元素的脱标
+浮动元素会脱离标准流,在标准流中浮动元素不会占用标准流中的位置
+
+1.浮动元素排序规则
+1.1相同方向上的浮动元素, 先浮动的元素会显示在前面, 后浮动的元素会显示在后面
+1.2不同方向上的浮动元素, 左浮动会找左浮动, 右浮动会找右浮动
+1.3浮动元素浮动之后的位置, 由浮动元素浮动之前在标准流中的位置来确定
+-->
+
+<div class="b1">
+
+</div>
+<div class="b2">
+</div>
+<div class="b3">
+</div>
+<div class="b4">
+</div>
+
+</body>
+</html>

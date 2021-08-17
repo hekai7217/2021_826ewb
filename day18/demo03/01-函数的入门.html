@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-函数的入门.html</title>
+    <script>
+        /**
+         * 1.什么是函数?
+         函数是专门用于封装代码的, 函数是一段可以随时被反复执行的代码块
+         2.函数格式
+         function 函数名称(形参列表){
+                    被封装的代码;
+                }
+         */
+        function demo01() {
+            console.log("我是函数...");
+        }
+
+        // 调用函数
+        // 函数名称();
+        // demo01();
+
+        // 遍历  数组
+        // let arr = [1,2,3];
+        // for (let i = 0 ; i <arr.length ; i ++){
+        //     console.log(arr[i]);
+        // }
+        //
+        // let arr2 = [2,3,5];
+        // for (let i = 0 ; i <arr2.length ; i ++){
+        //     console.log(arr2[i]);
+        // }
+
+        function demo(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                console.log(arr[i]);
+            }
+        }
+        let arr = [1,2,3];
+        demo(arr);
+        let arr2 = [2,3,5];
+        demo(arr2);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

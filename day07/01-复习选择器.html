@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-复习选择器.html</title>
+
+    <style>
+
+        /*
+           3个基本选择器
+        */
+        /*#s1 {*/
+        /*    color: pink;*/
+        /*    font-size: 20px;*/
+        /*}*/
+
+        /*.s2 {*/
+        /*    color: blue;*/
+        /*    font-size: 22px;*/
+        /*}*/
+        /*.s2{*/
+        /*    font-size: 20px;*/
+        /*}*/
+
+        /*.s3{*/
+        /*    color: #ff79ef;*/
+        /*}*/
+        /*span {*/
+        /*    color: red;*/
+        /*    font-size: 20px;*/
+        /*}*/
+
+    /*
+     层级选择器
+    */
+        /*p > span{*/
+        /*    color: yellow;*/
+        /*    font-size: 20px;*/
+        /*}*/
+
+        /*p > .s2{*/
+        /*    color: yellow;*/
+        /*    font-size: 20px;*/
+        /*}*/
+
+        /*p span {*/
+        /*    color: green;*/
+        /*    font-size: 20px;*/
+        /*}*/
+
+        /*p .s2 {*/
+        /*    color: skyblue;*/
+        /*    font-size: 20px;*/
+        /*}*/
+
+        /*p span:first-child{*/
+        /*    color: green;*/
+        /*    font-size: 20px;*/
+        /*}*/
+
+        /*p span:first-of-type{*/
+        /*    color: yellow;*/
+        /*    font-size: 20px;*/
+        /*}*/
+
+        /*span:nth-of-type(1){*/
+        /*    background-color:blue;*/
+        /*}*/
+
+        /*span:nth-child(1){*/
+        /*    background-color: #eeeeee;*/
+        /*}*/
+        /*span[id]{*/
+        /*    background-color: red;*/
+        /*}*/
+
+        /*拿到 所有的 有class属性的标签*/
+        /*[class]{*/
+        /*    background-color: green;*/
+        /*}*/
+
+        /* span拿到 所有的 有class属性的span标签*/
+        /*span[class]{*/
+        /*    background-color: green;*/
+        /*}*/
+
+        span[class='s2']{
+            background-color: blue;
+        }
+
+    </style>
+
+</head>
+<body>
+<!--
+    通过我们选择器 修改 字体的颜色和 大小
+-->
+<p>
+    <span id="s1" class="s2">我是span标签</span>
+</p>
+
+</body>
+</html>

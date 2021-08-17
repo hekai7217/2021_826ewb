@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-表格的完整标签.html</title>
+</head>
+<body>
+<!--
+5.表格完整标签
+由于表格中存储的数据比较复杂, 为了方便管理和阅读以及提升语义, 其实HTML还提供了很多table相关标签,完整表示如下:
+table表示表格标签的范围
+tr (table row)表示表格的行
+td (table column) 表示表格的列
+th (table header) 表示表格的标题列
+caption 表格的标题
+tbody 表示表格的体
+thead表示表格的头
+tfoot 表示表格的尾部
+注意:
+1.一个表格可以有一个tbody也可以有多个tbody,但是只能够有一个caption和thead以及tfoot。
+2.如果我们没有编写tbody, 系统会系统给我们添加tbody
+3.如果指定了thead和tfoot, 那么在修改整个表格的高度时, thead和tfoot有自己默认的高度, 不会随着表格的高度变化而变化
+-->
+<table border="1" cellspacing="0">
+    <caption>
+          用户信息
+    </caption>
+    <!--    表格的头部 -->
+    <thead>
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>age</td>
+    </tr>
+    </thead>
+    <!--    表格的身体-->
+    <tbody>
+    <tr>
+        <td>1001</td>
+        <td>张三</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>1002</td>
+        <td>李四</td>
+        <td>22</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+        <td>1003</td>
+        <td>王五</td>
+        <td>20</td>
+    </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>

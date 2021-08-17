@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-把数据转成字符串2.html</title>
+    <script>
+        /**
+         * 转换为字符串类型
+         1.将Number类型转换为字符串类型
+         2.将Boolean类型转换为字符串类型
+         3.将undefined类型转换为字符串类型
+         4.将null类型转换为字符串类型
+
+         在JavaScript中如果想将以上的四种基本数据类型转换为字符串类型, 常用的方法有三种
+         1.对于Number类型和Boolean类型来说, 可以通过 变量名称.toString()的方式来转换
+         2.可以通过String(常量or变量);转换为字符串
+         3.还可以通过 变量or常量 + "" / 变量or常量 + ''转换为字符串
+         *
+         */
+      // 特殊的 转换  undefined  / null  不能使用toString进行转成字符串
+      //  1.对于Number类型和Boolean类型来说, 可以通过 变量名称.toString()的方式来转换
+      //   let a = undefined;
+      //   let s1 = a.toString();
+      //   console.log(s1);
+        // let b = null;
+        // let s2 = b.toString();
+        // console.log(s2);
+
+        // 可以通过String(常量or变量);转换为字符串  如果是undefined/null 可以通过 String转成 字符串
+        // let a = undefined;
+        // let s1 = String(a);
+        // console.log(s1);
+        // let b = null;
+        // let s2 = String(b);
+        // console.log(s2);
+
+        // 还可以通过 变量or常量 + "" / 变量or常量 + ''转换为字符串
+        let a = undefined + "";
+        console.log(a);
+        console.log(typeof a);
+
+        let b = null + "";
+        console.log(b);
+        console.log(typeof b);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

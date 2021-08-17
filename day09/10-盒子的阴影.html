@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10-盒子的阴影.html</title>
+    <style>
+                
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .b1{
+            height: 200px;
+            width: 200px;
+            border: 1px solid #000;
+            margin: 100px auto;
+            /*box-shadow: 水平偏移 垂直偏移 模糊度 阴影扩展 阴影颜色 内外阴影;*/
+            /*box-shadow: 10px 10px;*/
+            box-shadow: 10px 10px gray;
+            box-shadow: 10px 10px 4px gray;
+            box-shadow: 10px 10px 4px 50px gray;
+
+            /* 默认 外阴影  */
+            box-shadow: 10px 10px 4px  gray inset;
+        }
+
+        .b2{
+            height: 200px;
+            width: 200px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            box-shadow: 5px 5px 4px red;
+        }
+
+        p{
+            color: #ff79ef;
+            font-size: 20px;
+            text-shadow: 5px 5px 4px gray;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+1.如何给盒子添加阴影
+box-shadow: 水平偏移 垂直偏移 模糊度 阴影扩展 阴影颜色 内外阴影;
+
+2.注意点
+2.1盒子的阴影分为内外阴影, 默认情况下就是外阴影
+2.2快速添加阴影只需要编写三个参数即可
+box-shadow: 水平偏移 垂直偏移 模糊度;
+默认情况下阴影的颜色和盒子内容的颜色一致
+
+3.如何给文字添加阴影
+text-shadow: 水平偏移 垂直偏移 模糊度 阴影颜色 ;
+-->
+
+<div class="b1">
+    
+</div>
+<div class="b2">
+    <img src="images/a.webp" alt="">
+</div>
+
+<p>百日依山尽</p>
+
+</body>
+</html>

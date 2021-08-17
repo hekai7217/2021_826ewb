@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07-背景的属性的连写.html</title>
+    <style>
+
+        body {
+            height: 2000px;
+        }
+
+        .b1 {
+
+            height: 400px;
+            width: 400px;
+            /*background: 颜色  图片 是否平铺 关联方式  定位;*/
+            /*background: #ff79ef url("images/baby_1.jpg") no-repeat  fixed 0 0 ;*/
+            /*background:  url("images/baby_1.jpg") no-repeat  0 0 ;*/
+            /*background:  url("images/baby_1.jpg")  ;*/
+
+            /*background: url("images/baby_1.jpg") no-repeat  fixed 0 0;*/
+            /*background-color: red;*/
+            /*background-image: url("images/baby_1.jpg");*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: 0 0;*/
+
+            background: red url("images/baby_1.jpg") no-repeat  0 0;
+
+        }
+
+        .b2 {
+            border: 1px solid #000;
+            height: 400px;
+            width: 400px;
+            background-image: url(images/baby_1.jpg);
+            background-repeat: no-repeat;
+            /*scroll: 默认值, 背景会随着滚动条的滚动而滚动*/
+            background-attachment: scroll;
+            /*    fixed: 不会随着滚动条的滚动而滚动*/
+            background-attachment: fixed;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+.background 复合属性
+1. 如何设置背景属性的简写
+格式: background: 背景颜色 背景图片 平铺方式 关联方式 背景定位
+background:#C00 url(../image/aaa.gif) 205px 10px no-repeat;
+    快捷键:
+    bg: background: ;
+    bg+
+2. 注意:
+a. background属性中,任何一个属性都是可以省略的
+
+3. 什么是背景的关联方式
+    格式:  background-attachment: scroll;
+    快捷键: bga: background-attachment
+ 取值:
+    scroll: 默认值, 背景会随着滚动条的滚动而滚动
+    fixed: 不会随着滚动条的滚动而滚动
+-->
+<div class="b1">
+
+</div>
+<div class="b2">
+
+</div>
+
+</body>
+</html>

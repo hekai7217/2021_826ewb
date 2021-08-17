@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>18-浮动练习01.html</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 1200px;
+            height: 80px;
+            margin: 100px auto;
+            background-color: #795757;
+        }
+
+        .container div {
+            float: left;
+        }
+
+        .container .logo {
+            height: 80px;
+            width: 150px;
+            text-align: center;
+        }
+
+        .container .logo img {
+            height: 60px;
+            margin-top: 10px;
+        }
+
+        .container .nav {
+            height: 80px;
+            width: 800px;
+        }
+
+        .container .nav ul {
+            height: 80px;
+            width: 800px;
+            list-style-type: none;
+        }
+
+        .container .nav ul li {
+            height: 80px;
+            width: 114px;
+            float: left;
+            text-align: center;
+            line-height: 80px;
+            color: white;
+        }
+
+        .container .nav ul li:hover {
+            color: blue;
+        }
+
+        .container .vip {
+            height: 80px;
+            width: 250px;
+        }
+
+        a {
+            text-decoration: none;
+            text-align: center;
+            border: 2px solid orange;
+            border-radius: 20px;
+            display: inline-block;
+            height: 40px;
+            margin-top: 20px;
+        }
+
+        .container .vip a:nth-of-type(1) {
+            color: yellow;
+            background-color: #c79f9f;
+            width: 90px;
+            font-size: 14px;
+            padding-top: 8px;
+            box-sizing: border-box;
+            margin-left: 10px;
+        }
+
+        .container .vip a:nth-of-type(2) {
+            color: red;
+            width: 120px;
+            font-size: 14px;
+            font-weight: bold;
+            padding-top: 8px;
+            background-color: gold;
+            box-sizing: border-box;
+            margin-left: 15px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="logo">
+        <img src="images/logo.png">
+    </div>
+    <div class="nav">
+        <ul>
+            <li>功能特权</li>
+            <li>游戏特权</li>
+            <li>生活特权</li>
+            <li>会员活动</li>
+            <li>成长体系</li>
+            <li>年费专区</li>
+            <li>超级会员</li>
+        </ul>
+    </div>
+    <div class="vip">
+        <a href="#">登录</a>
+        <a href="#">开通超级会员</a>
+    </div>
+</div>
+</body>
+</html>

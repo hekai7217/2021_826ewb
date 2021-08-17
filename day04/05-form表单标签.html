@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-form表单标签.html</title>
+</head>
+<body>
+<!--
+form表单:所有希望提交给服务器的数据都必须放在form表单里面
+    表单提交方式:
+        1.可以通过提交按钮提交 type = submit
+        2.通过javascript提交 【后面课程详细介绍】 type=button
+        3.通过图片提交 type = image
+    表单常用属性
+        action: 表单提交的地址，这里书写的是Web服务器的地址
+        method: 请求方式 【了解】 (http的协议)
+
+        enctype: 整个表单提交数据的编码方式
+                application/x-www-form-urlencoded    键值对的方式提交数据 （默认方式）
+                 multipart/form-data                              多数据多文件提交  （有文件上传的提交方式）
+
+        get请求和post请求的区别:
+            get请求:
+                1.地址栏输入
+                2.form表单没有指定method属性
+                3.method属性为get
+                4.超链接（a标签）提交到服务器也是get请求
+
+                get请求传输的数据量较小,一般不能大于2K
+                        请求参数直接拼接在URL后面，不安全
+                       http://localhost:63342/server/server.html?username=admin&password=1234
+                post请求:
+                    1.设置请求方式post
+                    2. post请求数据量大小不受限制,但往往取决于服务器的限制
+                    3. post请求发送的请求参数以及对应的值放在请求体中传输，地址栏上看不到,安全性较高 【暂时忽略】
+               开发中一般都是post,目前暂时先用get请求
+-->
+
+<!--<p>-->
+<!--    密码:<input type="text">-->
+<!--</p>-->
+
+<form action="/server/server.html" method="get">
+    <p>
+        用户名:<input type="text" name="username">
+    </p>
+    <p>
+        密码:<input type="text" name="password">
+    </p>
+
+    <p><input type="submit"></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-清除浮动方式05</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .b1{
+            border: 1px solid #000;
+            overflow: hidden;
+            /*margin-bottom: 10px;*/
+        }
+
+        .b1 p{
+            height: 40px;
+            width: 60px;
+            background-color: #ff79ef;
+            float: left;
+
+        }
+
+        .b2{
+            margin-top: 10px;
+            border: 1px solid #000;
+        }
+
+        .b2 p{
+            height: 40px;
+            width: 60px;
+            background-color: pink;
+            float: left;
+        }
+
+
+    </style>
+</head>
+<body>
+<!--
+
+1.overflow: hidden;
+作用
+1.1可以将超出标签范围的内容裁剪掉
+1.2清除浮动
+1.3可以通过overflow: hidden;让里面的盒子设置margin-top之后, 外面的盒子不被顶下来
+
+-->
+
+<div class="b1">
+    <p>我是p1</p>
+    <p>我是p1</p>
+    <p>我是p1</p>
+</div>
+
+<div class="b2">
+    <p>我是p2</p>
+    <p>我是p2</p>
+    <p>我是p2</p>
+</div>
+
+</body>
+</html>

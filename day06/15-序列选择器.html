@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15-序列选择器.html</title>
+
+    <style>
+
+        /*5.1 E F: first-child  选择E标签下面第一个子标签F*/
+        /*ul li:first-child{*/
+        /*    background-color: #ff79ef;*/
+        /*}*/
+        /*5.2 E F:last-child 选择E标签下面最后一个子标签F*/
+        /*ul li:last-child{*/
+        /*    background-color: gold;*/
+        /*}*/
+        /*5.3 E F:nth-child(n) 选择E标签下面第N个子标签F*/
+        /*ul li:nth-child(2){*/
+        /*    background-color: pink;*/
+        /*}*/
+        /*body p:nth-child(2){*/
+        /*    background-color: red;*/
+        /*}*/
+        /*   first-child  选中同级别中的第一个标签*/
+        /*   last-child  选中同级别中的第最后标签*/
+        /*   nth-child(n)  选中同级别中的第几个标签*/
+
+        /*5.4 E F:first-of-type 选择E标签下面第一个类型是F的子标签*/
+        /*ul li:first-of-type{*/
+        /*    background-color: pink;*/
+        /*}*/
+        /*first-child        选中同级别中的第一个标签   */
+        /*first-of-type 选中同级别中的第一个标签 (指定了标签类型)*/
+        /*body p:first-of-type{*/
+        /*    background-color: green;*/
+        /*}*/
+
+        /*5.5 E F:last-of-type 选择E标签下面最后一个类型是F的子标签*/
+        /*ul li:last-of-type{*/
+        /*    background-color: gold;*/
+        /*}*/
+        /*5.6 E F:nth-of-type(n) 选择E标签下面第N个类型是F的子标签*/
+        /*ul li:nth-of-type(2){*/
+        /*    background-color: blue;*/
+        /*}*/
+        /*5.7 nth-of-type(odd) 选择E标签下面奇数个类型是F的子标签
+        */
+        /*ul li:nth-of-type(odd){*/
+        /*    background-color: blue;*/
+        /*}*/
+        /*5.8 nth-of-type(even) 选择E标签下面偶数个类型是F的子标签*/
+        /*ul li:nth-of-type(even){*/
+        /*    background-color: skyblue;*/
+        /*}*/
+
+        /* 拿到 第一个li */
+        /*li:first-of-type{*/
+        /*    background-color: red;*/
+        /*}*/
+
+        /*p:first-of-type{*/
+        /*    background-color: gold;*/
+        /*}*/
+
+        /*:nth-child(xn+y)*
+        x和y是用户自定义的, 而n是一个计数器, 从1开始递增
+         */
+        /*  2n偶数 和  2n + 1  可以进行奇偶的判断*/
+        /*ul li:nth-child(2n){*/
+        /*    background-color: red;*/
+        /*}*/
+
+        /*ul li:nth-child(2n+1){*/
+        /*    background-color: blue;*/
+        /*}*/
+
+        /*!*:only-of-type 选中父元素中唯一类型的某个标签*!*/
+        /*ul li:only-child{*/
+        /*    background-color: #eeeeee;*/
+        /*}*/
+        /*
+        only-child 拿到标签下面的唯一的儿子
+        only-of-type    拿到标签下面的唯一类型的儿子
+        */
+        /*body h1:only-child{*/
+        /*    background-color: #eeeeee;*/
+        /*}*/
+        body h1:only-of-type{
+            background-color: #c79f9f;
+        }
+    </style>
+
+</head>
+<body>
+<!--
+什么序选择器?
+选择某个标签下面的第几个标签
+
+-->
+<h1>hello p</h1>
+<p>p1</p>
+<!--<p>p2</p>-->
+<!--<p>p3</p>-->
+<!--<ul class="u">-->
+<!--    <li>li1</li>-->
+<!--    <li>li2</li>-->
+<!--    <li>li3</li>-->
+<!--    <li>li4</li>-->
+<!--    <li>li5</li>-->
+<!--    <li>li6</li>-->
+<!--</ul>-->
+<!--<ul>-->
+<!--    <li>hello</li>-->
+<!--</ul>-->
+</body>
+</html>

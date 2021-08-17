@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-图片的路径问题</title>
+</head>
+<body>
+<!--
+        图片路径问题：
+        相对路径：不以盘符或者协议开头的路径叫做相对路径
+              同级路径    和当前的html文件是一个目录下的图片
+                     直接使用图片名称就可以通过 绝对路径显示图片
+                    <img src="yangmi3.webp">
+
+             上级路径    和当前的html的文件的父级在同一目录下的图片
+                    先找到html文件的父级目录在找目录下面的图片
+                     <img src="../images/yangmi4.webp" >
+                     ../ 是当前文件目录的上一级
+
+             下级路径  当前的html文件的同目录下的子目录中的图片
+                    先找到html文件的子目录，再找目录下面的图片
+                    <img src="img/yangmi2.webp" >
+                    <img src="./img/yangmi2.webp">
+                    ./  是当前的文件夹
+
+             常见的错误：
+                <img src="/img/yangmi2.webp">  写路径 前面加了 /
+                <img src="mg/yangmi2.webp">  图片名称写错了，路径写错了
+
+              技巧： 写路径让 提示路径和图片名称 不容易写错
+
+        绝对路径：以盘符或者协议开头的路径叫做绝对路径
+            以盘符图片的绝对路径： E:\7-26上课\web_code\day02\yangmi.webp （webstrom工具不能显示绝对路径的图片）
+            以协议图片的绝对路径    https://image.baidu.com/search/detail?0be10d62693301a0dd05a02be2586d46&rpstart=0&rpnum=0&adpicid=0&nojc=undefined （带协议的图片路径可以显示（不要写错了路径）（要有网络））
+-->
+<img src="E:\7-26上课\web_code\day02\yangmi.webp">
+<img src="https://img0.baidu.com/it/u=119352795,2643715086&fm=26&fmt=auto&gp=0.jpg">
+<hr>
+<!--<img src="./yangmi3.webp">-->
+<!--<hr>-->
+<!--<img src="../images/yangmi4.webp">-->
+<!--<hr>-->
+<!--<img src="./img/yangmi2.webp">-->
+<!--  ctrl + alt + j 给内容添加一个标签 -->
+
+<img src="../images/yangmi4.webp" alt="">
+<!--
+        /   路径分隔符       在win和linux中都可以使用
+       \   路径分隔符       在win中使用，要给转义符   \\ 第一个是转义符 第二是分隔符
+       总简介，还有兼容性  推荐 / 写法
+
+-->
+<img src="..\\images\\yangmi4.webp" alt="">
+
+
+
+</body>
+</html>

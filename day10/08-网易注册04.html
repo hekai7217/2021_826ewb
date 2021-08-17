@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08-网易注册03.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            width: 960px;
+            height: 80px;
+            margin: 0 auto;
+            padding-top: 28px;
+            box-sizing: border-box;
+        }
+
+        .header .logo {
+            width: 644px;
+            height: 27px;
+            background: url(images/glb_v2.png) no-repeat 0 0;
+            float: left;
+        }
+
+        .header .links {
+            float: right;
+        }
+
+        .header .links a {
+            font-size: 12px;
+            color: #ccc;
+        }
+
+        .main {
+            width: 960px;
+            height: 562px;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+        }
+
+        .main .top {
+            width: 960px;
+            height: 38px;
+            background-color: skyblue;
+
+        }
+
+        .main .top .title {
+            height: 38px;
+            line-height: 38px;
+            font-size: 14px;
+            color: white;
+            text-indent: 2em;
+            font-weight: bold;
+        }
+
+        .main .bottom {
+            width: 960px;
+            height: 524px;
+        }
+
+        .main .bottom .left {
+            width: 642px;
+            height: 524px;
+            padding-left: 80px;
+            padding-top: 50px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .main .bottom .left .head {
+            width: 560px;
+            height: 60px;
+        }
+
+        .main .bottom .left .head .nav {
+            width: 412px;
+            height: 34px;
+            list-style-type: none;
+            background: url("images/tab.jpg") no-repeat 0 0;
+        }
+
+        .main .bottom .left .head .nav li {
+            width: 137px;
+            height: 34px;
+            line-height: 34px;
+            float: left;
+            text-align: center;
+        }
+
+        .main .bottom .left .line {
+            width: 413px;
+            height: 28px;
+        }
+
+        .main .bottom .left .line .desc {
+            width: 60px;
+            height: 28px;
+            line-height: 28px;
+            text-align: right;
+            font-size: 12px;
+            font-family: "宋体";
+            float: left;
+        }
+
+        .main .bottom .left .line .desc .start {
+            color: red;
+        }
+
+        .main .bottom .left .line input[type=text] {
+            height: 26px;
+            width: 218px;
+        }
+
+        .main .bottom .left .line select {
+            height: 28px;
+            width: 100px;
+        }
+
+        .main .bottom .left .line div {
+            height: 28px;
+            line-height: 28px;
+            float: right;
+            font-size: 12px;
+        }
+
+        .main .bottom .left .line img{
+            width: 100px;
+            height: 28px;
+        }
+
+        .main .bottom .left p {
+            margin-left: 80px;
+            line-height: 28px;
+            font-size: 12px;
+        }
+
+        .main .bottom .right {
+            width: 318px;
+            height: 524px;
+            background-color: #f5f5f5;
+            float: left;
+        }
+
+        .main .bottom .right img {
+            margin-top: 110px;
+            margin-left: 50px;
+        }
+
+        .footer {
+            width: 960px;
+            height: 48px;
+            background-color: skyblue;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+    </div>
+    <div class="links">
+        <a href="#">了解更多</a>
+        |
+        <a href="#">反馈意见</a>
+    </div>
+</div>
+<div class="main">
+    <div class="top">
+        <p class="title">欢迎注册无限容量的网易邮箱！邮件地址可以登录使用其他网易旗下产品。</p>
+    </div>
+    <div class="bottom">
+        <div class="left">
+            <div class="head">
+                <ul class="nav">
+                    <li>注册字母邮箱</li>
+                    <li>注册手机号码邮箱</li>
+                    <li>注册VIP邮箱</li>
+                </ul>
+            </div>
+            <div class="line">
+                <span class="desc">
+                    <span class="start">*</span> 邮件地址
+                </span>
+                <div>
+                    <input type="text" placeholder="建议使用手机号码注册">@<select>
+                    <option value="163.com">163.com</option>
+                    <option value="126.com">126.com</option>
+                    <option value="133.com">133.com</option>
+                </select>
+                </div>
+            </div>
+            <p>
+                6~18个字符，可使用字母、数字、下划线，需以字母开头
+            </p>
+
+        </div>
+        <div class="right">
+            <img src="images/wy_right.jpg" alt="">
+        </div>
+    </div>
+</div>
+<div class="footer">
+</div>
+
+</body>
+</html>

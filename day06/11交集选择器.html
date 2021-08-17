@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11交集选择器.html</title>
+    <style>
+
+            divp{
+                background-color: yellow;
+            }
+            p.p1{
+                background-color: red;
+            }
+    </style>
+</head>
+<body>
+<!--
+给所有选择器选中的标签中, 相交的那部分标签设置属性
+格式:
+选择器1选择器2{
+    属性: 值;
+}
+总结:
+a. 选择器和选择器之间是没有符号隔开的
+b. 选择器可以是标签/id/类选择器
+c. 交集选择中如果存在标签选择器,那么标签选择必须写在最前面,标签选择器和id选择器不能够同时使用
+d. 交集选择器在企业开发中并不会经常使用.
+e  2个选择器作用在同一个标签上面
+             div#p4{
+                background-color: yellow;
+            }
+             p.p1{
+                background-color: red;
+            }
+-->
+<div id="p4" class="p3">
+    hello div
+</div>
+
+<p class="p1">我是段落</p>
+<p class="p2">我是段落</p>
+<p>我是段落</p>
+
+
+
+</body>
+</html>

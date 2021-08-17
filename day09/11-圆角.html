@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11-圆角.html</title>
+    <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            .b1{
+                height: 200px;
+                width: 200px;
+                margin: 100px auto;
+                border: 1px solid #000;
+
+                /* 边框的圆角 */
+                /*border-radius: 10px 20px 30px 40px;*/
+
+                /*  分开写圆角*/
+                border-top-left-radius: 20px;
+                border-top-right-radius: 30px;
+                /*border-bottom-left-radius: 40px;*/
+                /*border-bottom-right-radius: 50px;*/
+
+            }
+
+            .b2{
+                height: 200px;
+                width: 200px;
+                margin: 10px auto;
+                border: 1px solid #000;
+                /*border-radius: 100px;*/
+                /* 给百分比*/
+                border-radius: 50%;
+
+            }
+
+            .b3{
+                height: 5px;
+                width: 5px;
+                margin: 10px auto;
+                border: 1px solid #000;
+                background-color: red;
+                /*border-radius: 100px;*/
+                /* 给百分比*/
+                border-radius: 50%;
+            }
+
+            .b4{
+                height: 100px;
+                width: 100px;
+                margin: 10px auto;
+                border: 90px solid #000;
+                /*
+                当边框圆角的值 > 边框宽度的时候, 外边框和内边框都会变成圆角
+                */
+                border-radius: 100px;
+                /*
+                当边框圆角的值 <= 边框宽度的时候, 外边框是圆角, 内边框是直角
+                */
+                border-radius: 80px;
+            }
+
+            .b5{
+                height: 50px;
+                width: 100px;
+                margin: 10px auto;
+                border: 1px solid #000;
+                background-color: red;
+                /* 半圆*/
+                border-bottom-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+            }
+
+            .b6{
+                height: 50px;
+                width: 120px;
+                margin: 10px auto;
+                border: 1px solid #000;
+                background-color: red;
+                /*按钮*/
+                border-radius: 50px;
+                text-align: center;
+                line-height:50px ;
+                font-size: 20px;
+                color: white;
+            }
+
+            .b6:hover{
+                background-color: skyblue;
+                color: green;
+            }
+
+    </style>
+</head>
+<body>
+<!--
+1.什么是边框圆角?
+将直角的边框变为圆角的边框
+
+2.边框圆角的格式?
+border-radius: 左上 右上 右下 左下;
+
+修改了边框的宽度后:
+当边框圆角的值 > 边框宽度的时候, 外边框和内边框都会变成圆角
+当边框圆角的值 <= 边框宽度的时候, 外边框是圆角, 内边框是直角
+
+
+半圆形
+利用border-radius属性制作半圆形的两个要点
+制作上半圆或下半圆时，元素的宽度是高度的2倍，而且圆角半径为元素的高度值
+制作左半圆或右半圆时，元素的高度是宽度的2倍，而且圆角半径为元素的宽度值
+-->
+
+<!--<div class="b1"></div>-->
+<!--<div class="b2"></div>-->
+<!--<div class="b3"></div>-->
+<!--<div class="b4"></div>-->
+<div class="b5"></div>
+<div class="b6">
+    立即注册
+</div>
+
+
+</body>
+</html>

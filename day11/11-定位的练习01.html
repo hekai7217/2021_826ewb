@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11-定位的练习01.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            height: 60px;
+            width: 720px;
+            margin: 100px auto;
+            list-style-type: none;
+        }
+
+        li{
+            width: 120px;
+            text-align: center;
+            height: 60px;
+            line-height: 60px;
+            font-size: 16px;
+            color: whitesmoke;
+            float: left;
+            background-color: #ff79ef;
+            position: relative;
+        }
+
+        li:nth-of-type(3) img{
+            /*position: relative;*/
+            /*left: 50px;*/
+            /*top: -15px;*/
+            position: absolute;
+            left: 50px;
+            top: 3px;
+        }
+
+    </style>
+</head>
+<body>
+
+<ul>
+    <li>
+        品牌闪购
+    </li>
+    <li> 拍卖</li>
+    <li>
+        <img src="images/hot.png">
+        京东家电
+    </li>
+    <li> 京东超市</li>
+    <li> 京东生鲜</li>
+    <li>
+        京东国际
+    </li>
+</ul>
+</body>
+</html>

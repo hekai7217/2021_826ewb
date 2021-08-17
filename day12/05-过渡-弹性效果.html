@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-过渡-弹性效果.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div{
+            height: 100px;
+            margin: 100px auto;
+            background-color: red;
+            text-align: center;
+        }
+
+        div span{
+            font-size: 60px;
+            line-height: 100px;
+            transition: margin 3s;
+        }
+
+        div:hover span{
+            margin: 0px 20px;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+        01 完成页面的基本布局
+        02  找到 状态A -- 状态B的属性变化
+        03  找到指定的模块 设置过渡效果
+-->
+<div>
+        <span>老</span>
+        <span>何</span>
+        <span>带</span>
+        <span>老</span>
+        <span>你</span>
+        <span>狂</span>
+        <span>虐</span>
+        <span>h</span>
+        <span>5</span>
+</div>
+
+
+
+</body>
+</html>

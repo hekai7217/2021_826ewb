@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .father {
+            height: 200px;
+            width: 200px;
+            border: 1px solid #000;
+            margin: 100px auto;
+
+            transform: rotateY(40deg);
+            perspective: 500px;
+
+            /*  3d效果 */
+            transform-style: preserve-3d;
+        }
+
+        .son {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            transform: rotateX(45deg);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="father">
+    <div class="son">
+
+    </div>
+</div>
+
+</body>
+</html>

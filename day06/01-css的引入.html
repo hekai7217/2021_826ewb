@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-css的引入.html</title>
+    <style>
+            /* 所有的html页面的p标签都有这个样式*/
+            p{
+                /*字体大小*/
+                font-size: 30px;
+                /*字体颜色 */
+                color: #ff79ef;
+            }
+
+    </style>
+</head>
+<body>
+
+<!--
+    写一首诗
+      1. 修改文字的字体大小和字体颜色
+        使用font标签 进行页面的修改,font 这个标签过时了 不推荐使用
+        属性: <font size="6" color="red">
+          size设置字体大小
+          color 背景颜色
+
+       2. 把字体设置的更大  修改字体为绿色
+
+        来回修改html有下面的问题?
+
+        1. 需要记忆大量的属性,重点是还需要记住哪些属性是属于哪些标签的,如果这个标签没有相应的样式属性,那么设置了也没有效果
+        2. 当需求变更的时候,需要修改大量的代码才能够满足后期变化的需求,扩展性和维护性很差
+        3. HTML设计的初衷就是用来描述超文本的语义的, 这里利用font标签来修改样式,违背了HTML的设计原则
+        4. HTML代码和样式代码混在了一起,代码可读性很差
+
+        由于上述缺点,那么CSS应运而生
+        CSS的本质就是用来美化网页,定义超文本的样式的.
+        1.  行内嵌套 css的样式
+                <标签 style=""css的样式></标签>
+             01 需求变更的时候,需要修改大量的代码
+             02 HTML代码和样式代码混在了一起,代码可读性很差
+
+        2,推荐把标签 和css 样式进行隔离 编写css的样式
+            01 写css在style标签中
+            02 写css样式
+-->
+<!--<p><font size="8" color="green">百日依山尽</font></p>-->
+<!--<p><font size="8" color="green">黄河入海流</font></p>-->
+<!--<p><font size="8" color="green">欲穷千里目</font></p>-->
+<!--<p><font size="8" color="green">更上一层楼</font></p>-->
+
+<!--<p style="color: green;font-size: 20px" >百日依山尽</font></p>-->
+<!--<p style="color: green;font-size: 20px">黄河入海流</font></p>-->
+<!--<p style="color: green;font-size: 20px">欲穷千里目</font></p>-->
+<!--<p style="color: green;font-size: 20px">更上一层楼</font></p>-->
+
+<p >百日依山尽</font></p>
+<p>黄河入海流</font></p>
+<p>欲穷千里目</font></p>
+<p>更上一层楼</font></p>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-表单的正则校验.html</title>
+</head>
+<body>
+<!--
+     昵称 4-10的字符     中文 英文[a-zA-Z]下划线 数字
+     [\u4e00-\u9fa5]{0,}
+     \w
+      ([\u4e00-\u9fa5]|\w){4,10}
+
+   密码 6-16位数字
+    ^\d{6,16}$       122334
+   \d{6,16}            122334
+                            aaa123456aaa
+
+    手机：
+         ^1[357]\d{9}$   13|5|7|8开头
+
+     年龄：
+         0-99  100-149  150
+         (\d{1,2})| (1[0-4]\d)|150
+         1-9   \d{1}
+         11-99   \d{2}   和起来 ===》   0-99  \d{1,2}
+         0-1000
+-->
+<form action="server/server.html" method="get">
+    <p>
+        昵称:<input type="text" name=" nickname" pattern="^([\u4e00-\u9fa5]|\w){4,10}$" title="昵称 4-10的字符,中文 英文[a-zA-Z]下划线 数字">
+    </p>
+    <p>
+        密码:<input type="text" name="password" pattern="^\d{6,16}$" title=" 密码 6-16位数字">
+    </p>
+
+    <p>
+        确认密码:<input type="text" name="password" pattern="^\d{6,16}$" title=" 密码 6-16位数字">
+    </p>
+
+    <p>
+        电话:<input type="tel" name="tel" id="utel" pattern="^1[357]\d{9}$" title="手机号码13|5|7|8开头">
+    </p>
+
+    <p>
+        邮箱:<input type="tel" name="tel" id="emailId" pattern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" title="邮箱要按照规则来填写">
+    </p>
+    <p>
+        年龄:<input type="tel" name="tel" id="ageId" pattern="^(\d})|(1[0-4]\d)|150$" title="按照年龄来填入指定的数字">{1,2
+    </p>
+    <p>
+        <input type="submit" value="提交">
+    </p>
+</form>
+</body>
+</html>

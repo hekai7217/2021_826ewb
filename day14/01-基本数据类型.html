@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-基本数据类型.html</title>
+    <script>
+
+        /**
+         * 1.基本数据类型
+         Number 数值类型
+         在JavaScript中无论是整数还是小数都是属于数值类型的
+
+         String字符串类型
+         在JavaScript中无论是通过单引号还是通过双引号括起来的内容都是属于字符串类型的
+
+         Boolean布尔类型
+         在JavaScript中布尔类型比较特殊, 只有两个取值true/false
+
+         Undefined 未定义类型
+         在JavaScript中未定义类型比较特殊, 只有一个取值undefined
+
+         Null 空类型
+         *
+         */
+
+        // 整数 和小数 都是 数值类型 Number
+        //  chrome 浏览器 数值输出的是 蓝色
+        // 通过 函数 typeof 可以判断 变量的数据类型
+        let a = 10;
+        let b = 10.3;
+        console.log(a);
+        console.log(b);
+        // 返回的是 数据类型
+        console.log(typeof a);
+        console.log(typeof b);
+
+        // 字符串
+        let s1 = "hello";
+        let s2 = 'aa';
+        console.log(s1);
+        console.log(s2);
+        console.log(typeof s1);
+        console.log(typeof s2);
+
+        // ''  / "" 包裹都是 字符串
+        let s3 = '123';
+        let s4 = '  ';
+
+        //布尔类型 只有2个值  true/false
+        let b1 = true;
+        let b2 = false;
+
+        let  b3 = false;
+        console.log(b1);
+        console.log(typeof b1);
+
+        // 定义了变量 没有赋值  undefined
+        let u;
+        console.log(u);
+        console.log(typeof u);
+
+        // 特殊类型
+        let u2 = null;
+        console.log(u2);
+        console.log(typeof u2);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

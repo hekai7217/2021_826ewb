@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>16-属性选择器.html</title>
+    <style>
+        /*p[class]{*/
+        /*    background-color: red;*/
+        /*}*/
+
+        /*p[class='p1'] {*/
+        /*    background-color: skyblue;*/
+        /*}*/
+
+        /*p[id='p3'] {*/
+        /*    background-color: blue;*/
+        /*}*/
+
+        /*input[type='text'] {*/
+        /*    background-color: blue;*/
+        /*}*/
+
+        /*name 属性 = username*/
+        /*input[name="username"]{*/
+        /*    background-color: red;*/
+        /*}*/
+
+        /*name ^ = user
+             name属性以user开头
+        */
+        /*input[name^="user"]{*/
+        /*    background-color: red;*/
+        /*}*/
+        /*name $ = me
+              name属性以me结尾
+         */
+        /*input[name$="me"]{*/
+        /*    background-color: red;*/
+        /*}*/
+
+        /*name * = me
+              name属性包含me
+    */
+        input[name*="me"]{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+1.什么是属性选择器?
+作用: 根据指定的属性名称找到对应的标签, 然后设置属性
+
+格式:
+[attribute]
+作用:根据指定的属性名称找到对应的标签, 然后设置属性
+
+[attribute=value]
+作用: 找到有指定属性, 并且属性的取值等于value的标签, 然后设置属性
+最常见的应用场景, 就是用于区分input属性
+input[type=password]{}
+<input type="text" name="" id="">
+<input type="password" name="" id="">
+
+1.属性的取值是以什么开头的
+[attribute^=value] CSS3
+两者之间的区别:
+CSS3中的只要是以value开头的都可以找到, 无论有没有被-隔开
+
+2.属性的取值是以什么结尾的
+[attribute$=value] CSS3
+
+3.属性的取值是否包含某个特定的值得
+[attribute*=value] CSS3
+CSS3中的只要包含value就可以找到
+
+-->
+<p id="p3">百日依山尽</p>
+<p class="p1">黄河入海流</p>
+<p class="p2">欲穷千里目</p>
+<p>更上一层楼</p>
+
+<form action="" method="get">
+
+    用户名:<input type="text" name="username">
+    密码:<input type="password" name="useraaa">
+    电话:<input type="tel" name="usernbbme">
+
+</form>
+
+</body>
+</html>

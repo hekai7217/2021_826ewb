@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12-字体样式color.html</title>
+    <style>
+
+            div{
+
+                /* 字体颜色  红绿蓝*/
+                /* 字体颜色 */
+                /*color: yellow;*/
+
+                /* 组合色  skyblue*/
+                /* 组合色 */
+                /*color: skyblue;*/
+
+            /*    16进制的颜色
+               绿色   #00FF00
+            */
+                /*color: #00FF00;*/
+                /*color: #cd8162;*/
+
+            /*     rgb 颜色*/
+            /*    color: rgb(152,245,255);*/
+
+                color: rgba(84, 139, 84, 0.5);
+                color: rgb(111, 111, 111);
+
+            }
+
+    </style>
+</head>
+<body>
+<!--
+1.color
+color:用于设置文本的颜色。
+单词关键字:red、green、blue、black、yellow、white、gray/grey、orange、purple、pink
+组合色: greenyellow、orangered、skyblue、darkxxx、lighitxxx
+
+十六进制:#000000(黑色) #FFFFFF(白色) #FF0000红色 #00FF00(绿色) #0000FF (蓝色)
+ 如果每两位颜色对应的数字是一样的,那么可以简写
+        FF0000 ==> F00
+        334455 ==> 345
+        233445 => 不能简写
+
+Rgb:三原色:rgb(red,green,blue) red/green/blue 取值范围[0,255]
+第一个数字就是用来设置三原色中红色显示的亮度
+第二个数字就是用来设置三原色中绿色显示的亮度
+第三个数字就是用来设置三原色中蓝色显示的亮度
+每一个颜色的取值范围是 0~255 之间, 0代表不发光,255代表发光, 值越大,亮度越高
+不同的颜色混合在一起会出现不同的色彩
+注意: 在实际开发中设置颜色并不会使用纯色,可以使用浅色
+例如黑色, 可以使用灰色, 只需要设置这三个值一样大,那么就是灰色
+
+RGBA: 在RGB基础上增加了控制alpha透明度的参数，其中这个透明通道值为0～1
+
+总结: 在实际前端开发中,颜色是可以通过取色器来取色的,或者UI设计师会提供颜色的十六进制给我们开发人员
+-->
+
+<div>
+    我是div标签
+</div>
+
+</body>
+</html>

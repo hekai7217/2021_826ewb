@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-div布局.html</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            .header{
+                width: 600px;
+                height: 60px;
+                background-color: black;
+                color: white;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .header h1{
+                height: 60px;
+                line-height: 60px;
+            }
+
+            .body{
+                width: 600px;
+                height: 400px;
+                background-color: #ff79ef;
+                margin: 0 auto;
+            }
+
+            .body .nav{
+                height: 400px;
+                width: 100px;
+                background-color: pink;
+                float: left;
+                list-style-type: none;
+                padding-left: 10px;
+                box-sizing: border-box;
+            }
+
+            .body .nav li{
+                height: 30px;
+            }
+
+            .body .content{
+                height: 400px;
+                width: 500px;
+                background-color: skyblue;
+                float: right;
+            }
+
+            .footer{
+                width: 600px;
+                height: 40px;
+                background-color: skyblue;
+                margin: 0 auto;
+            }
+
+            .footer p{
+                text-align: center;
+                line-height: 40px;
+            }
+    </style>
+</head>
+<body>
+<!--
+            html 的作用:
+            01  页面标签的语义
+            02   网页结构布局
+                    header       h1标签
+                    body          div  左边是 nav  div右边是   h1/p
+                    footer         p标签
+         css:  页面样式美化
+-->
+<div class="header">
+    <h1>City Gallery</h1>
+</div>
+<div class="body">
+    <ul class="nav">
+        <li>London</li>
+        <li>Paris</li>
+        <li>Tokyo</li>
+    </ul>
+
+    <div class="content">
+        <h2>London</h2>
+        <p>
+            London is the capital city of England. It is the most populous city in the United Kingdom,
+            with a metropolitan area of over 13 million inhabitants.
+        </p>
+        <p>
+            Standing on the River Thames, London has been a major settlement for two millennia,
+            its history going back to its founding by the Romans, who named it Londinium.
+        </p>
+    </div>
+
+
+</div>
+<div class="footer">
+    <p> Copyright ? W3Schools.com</p>
+</div>
+
+</body>
+</html>

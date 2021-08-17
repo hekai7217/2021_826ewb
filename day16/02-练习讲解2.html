@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-练习讲解2.html</title>
+    <script>
+        /**
+         * 9.根据BMI(身体质量指数)显示一个人的体型。BMI是指身高体重的一个计算公式。
+         BMI = 体重 / 身高的平方
+         指数- 说明-
+         低于18.5 过轻
+         18.5~24.9 正常
+         25~27.9 过重
+         28~32 肥胖
+         高于32 非常肥胖
+         编程输入身高和体重，计算BMI, 输出身体状况。
+         */
+
+        // 拿到 体重   拿到升高
+        let weight = prompt("请输入你的体重(kg)输入整数");
+        let height = prompt("请输入身高?")
+        // 计算
+        let bmi = weight / (height * height);
+        //判断 bmi
+        if (bmi <18.5){
+            alert("过轻");
+        }
+        if (bmi >=18.5 && bmi <= 24.9){
+            alert("正常");
+        }
+        if (bmi >=25 && bmi <= 27.9){
+            alert(" 过重" + bmi);
+        }
+        if (bmi >=28 && bmi <= 32){
+            alert("肥胖");
+        }
+        if (bmi >=32){
+            alert("非常肥胖");
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

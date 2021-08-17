@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13-表单的文件提交.html</title>
+</head>
+<body>
+<!--
+type=”file” 表示当前表单是文件表单
+    注意:
+        1.文件上传的时候使用该表单
+        2.如果一个表单form标签中有一个文件表单，那么该表单必须指定method属性为post
+        3.文件表单是一种特殊的表单，如果一个form表单中有一个文件表单，那么必须显示声明enctype属性，并且enctype属性必须设置为multipart/form-data
+        4.multipart/form-data 这个值表示多部件表单属性
+    表单数据分为两类
+        a.普通表单  例如 type = “text”
+        b.文件表单  例如 type = “file”
+-->
+<form action="server/server.html" method="post"  enctype="multipart/form-data">
+    <p>
+        用户名:
+        <input type="text" name="name">
+    </p>
+    <p>
+        头像:
+        <input type="file" name="name">
+    </p>
+    <p>
+        <input type="submit">
+    </p>
+</form>
+
+</body>
+</html>

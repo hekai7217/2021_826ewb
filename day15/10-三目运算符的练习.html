@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10-三目运算符的练习.html</title>
+    <script>
+        /**
+         1.要求用户输入一个整数, 判断这个数是否是100~200之间的数
+         01 拿到 输入的整数
+         02 判断  条件1 && 条件2 ;
+         2.要求用户输入两个整数, 找出最大的那个数之后输出
+         01 拿到 输入的整数
+         02 判断  返回
+         3.有两个变量, 要求交换两个变量中保存的数据
+         */
+            // let  num = prompt("请输入一个整数?");
+            // let res1 = num >= 100 && num <200 ?"在100-200之间":"你的数据非法";
+            // alert(res1);
+
+            // let num1 = prompt("请输入第一个整数?")
+            // let num2 = prompt("请输入第二个整数?")
+            // //  变量    num1
+            // // 字符串  "num1"
+            // let res3 = num1 >= num2 ? num1:num2;
+            // alert("最大的数据是" + res3);
+
+        let a = 10;
+        let b = 20;
+        // 临时变量
+        let temp;
+        temp = a;
+        a = b;
+        b = temp;
+
+        console.log(a);
+        console.log(b);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07-选择器的优先级.html</title>
+
+    <style>
+
+            #p1{
+                background-color: red;
+            }
+
+            .b1{
+                background-color: green;
+            }
+
+            p{
+                background-color: gold;
+            }
+
+    </style>
+
+</head>
+<body>
+<!--
+如果多个基本选择器作用于同一个标签，那么优先级顺序是:
+Id选择器 > 类选择器 > 标签选择器
+ 权重:100      10             1
+ 如果标签中存在 style行间样式 这个权重 是:1000
+ style="background-color: pink"  级别最高
+-->
+<p id="p1" class="b1">我们中了500w</p>
+
+</body>
+</html>

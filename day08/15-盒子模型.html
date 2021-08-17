@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15-盒子模型.html</title>
+    <style>
+
+            .b1{
+                height: 200px;
+                width: 200px;
+                background-color: blue;
+            }
+
+            .b2{
+                height: 160px;
+                width: 160px;
+                background-color: skyblue;
+                padding: 20px;
+            }
+            /*
+                    元素的宽度 = 200px + 40px
+            */
+            .b3{
+                height: 150px;
+                width: 150px;
+                background-color: blue;
+                border: 5px solid #000;
+                padding: 20px;
+            }
+            /*
+                元素的宽度 = 200px + 40px +10px
+              */
+
+    </style>
+</head>
+<body>
+<!--
+总结:
+1.在HTML中所有的标签都可以设置
+2.盒子模型相关中的宽度和高度
+(1).内容的宽度和高度
+就是通过width/height属性设置的宽度和高度
+200px/200px
+
+(2).元素的宽度和高度
+宽度 = 左边框 + 左内边距 + width + 右内边距 + 右边框
+元素的宽度是 250 = 5 + 20 + 200 + 20 + 5
+设置了 padding 和border 元素的宽高会发送变化
+高度 同理可证
+
+(3).元素空间的宽度和高度
+宽度 = 左外边距 + 左边框 + 左内边距 + width + 右内边距 + 右边框 + 右外边距
+元素空间 310 =30+ 5 + 20 + 200 + 20 + 5 + 30
+-->
+<div class="b1"></div>
+<div class="b2"></div>
+<div class="b3"></div>
+</body>
+</html>

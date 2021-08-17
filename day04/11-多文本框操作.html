@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11-多文本框操作.html</title>
+</head>
+<body>
+<!--
+textarea表单组件 表示当前表单组件是一个多行文本框或者叫做文本域标签
+
+常用属性:
+name 表单提交的键
+value: 表单提交的值
+rows: 多行文本框的行数
+cols: 多行文本框的列数
+注意:
+1.多行文本框标签中的内容必须是空的
+
+-->
+<form action="server/server.html" method="get">
+    <p>
+          个人简介:<input type="text" name="info">
+    </p>
+    <p>
+        个人简介:
+
+        <textarea name="descStar" id="" cols="30" rows="10">
+
+        </textarea>
+    </p>
+    <p>
+        <input type="submit" value="提交">
+    </p>
+</form>
+
+
+</body>
+</html>

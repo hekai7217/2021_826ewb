@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09-z-index属性.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .b1 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+
+        .b2 {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 3;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+什么是z-index属性?
+默认情况下所有的元素都有一个默认的z-index属性, 取值是0. z-index属性的作用是专门用于控制定位流元素的覆盖关系的
+1.默认情况下定位流的元素会盖住标准流的元素
+2.默认情况下定位流的元素后面编写的会盖住前面编写的
+3.如果定位流的元素设置了z-index属性, 那么谁的z-index属性比较大, 谁就会显示在上面
+-->
+<div class="b1">
+</div>
+<div class="b2"></div>
+</body>
+</html>

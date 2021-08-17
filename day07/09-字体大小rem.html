@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09-字体大小rem.html</title>
+    <style>
+
+        /** 组合选择器  多个选择器有同样的样式 **/
+        .f1, .f2, .f2 {
+            font-size: 1.5rem;
+        }
+
+        span {
+            font-size: 1.5rem;
+        }
+
+        html {
+            font-size: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+rem是CSS3新增的一个相对单位，但相对的只是HTML根元素。通过它既可以做到只
+修改根元素就成比例地调整所有字体大小，又可以避免字体大小逐层复合的连锁反应。
+-->
+
+我是中了500w 在这里体验生活
+<div class="f1">
+    我是div
+    <div class="f2">
+        我是div的div
+        <div class="f3">
+            我是div的div的div
+        </div>
+    </div>
+</div>
+<span>
+    我是span标签
+</span>
+
+</body>
+</html>

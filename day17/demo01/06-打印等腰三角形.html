@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-打印等腰三角形.html</title>
+    <script>
+        /**
+         *      AAAAA*
+         *      AAAA***
+         *      AAA*****
+         *      AA*******
+         *      A**********
+         */
+        for (let  i= 1; i <=5;i++){
+            // 左边
+            for (let j = 1; j <= 6 - i;j++){
+                document.write("&nbsp;&nbsp;");
+            }
+            //右边
+            for (let j = 1; j <= 2*i-1 ;j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07- overflow属性.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .b1{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            overflow: hidden;
+        }
+
+        .b2{
+
+            width: 100px;
+            background-color: #ff79ef;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<!--
+ overflow属性
+ 01  溢出的内容可以裁剪     overflow: hidden; 溢出隐藏了
+ 02  清除浮动
+ 03  如果没有设置高度 ,如果盒子同时设置了overflow：hidden属性，盒子会自适应内容的高度。
+
+-->
+<div class="b1">
+    溢出的内容可以裁剪 溢出的内容可以裁剪 溢出的内容可以裁剪 溢出的内容可以裁剪 溢出的内容可以裁剪
+</div>
+
+<div class="b2">
+    溢出的内容可以裁剪 溢出的内容可以裁剪 溢出的内容可以裁剪 溢出的内容可以裁剪 溢出的内容可以裁剪
+</div>
+</body>
+</html>

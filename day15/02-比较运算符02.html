@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-比较运算符02.html</title>
+    <script>
+        /**
+         *
+         * 1. === !==
+         会同时判断取值和数据类型
+         == !=
+         只会判断取值
+         2.关系运算符的结合性和优先级
+         关系运算符都是左结合性(从左至右的运算)
+         关系运算符中 > < >= <= 的优先级高于 == != === !==
+         *
+         */
+
+        // == 只会判断取值是否相等, 不会判断数据类型是否相等
+        let res1= "123" == 123;
+        console.log(res1);
+
+        let res2 = "123" != 123;
+        console.log(res2);
+
+        // 会同时判断取值和数据类型
+        let res3 = "123" === 123;
+        console.log(res3);
+        let res4 = "123" !== 123;
+        console.log(res4);
+
+        // 注意点: 正式因为关系运算符是左结合性, 所以不能利用关系运算符来判断区间
+        let res = 10 > 5 > 3;  // 结果为true   判断结果为false
+        // 判断 10 > 5 = true    let res = true > 3    false
+        console.log(res);
+
+        let a = 10,b = 5,c = 3;
+        let res5 = a >b >c;
+        console.log(res5);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

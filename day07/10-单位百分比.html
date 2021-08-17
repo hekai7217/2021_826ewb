@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10-单位百分比.html</title>
+    <style>
+
+            table tr td:first-of-type{
+                /*width: 100px;*/
+                /*
+                width = fathter 的width * 20%
+                */
+                width: 20%;
+            }
+
+            table tr td:nth-of-type(2){
+                /*width: 150px;*/
+                width: 30%;
+            }
+
+            table tr td:nth-of-type(3){
+                /*width: 250px;*/
+                width: 50%;
+            }
+
+    </style>
+</head>
+<body>
+<!--
+%百分比，相对长度单位，相对于父元素的百分比值
+-->
+<table border="1" width="500px" cellspacing="0">
+    <tr>
+        <td>姓名</td>
+        <td>年龄</td>
+        <td>性别</td>
+    </tr>
+
+    <tr>
+        <td>张三</td>
+        <td>20</td>
+        <td>男</td>
+    </tr>
+
+</table>
+
+</body>
+</html>

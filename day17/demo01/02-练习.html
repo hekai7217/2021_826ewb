@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-练习.html</title>
+    <script>
+        /**
+         * 5.打印出1000-2000年中所有的闰年，并以每行四个数的形式输出
+         */
+        let count = 0;
+        let str = "";
+        for (let i = 1000; i <= 2000; i++) {
+            if ( i % 4 ===0 && i % 100 !==0 || i % 400 ===0) {
+                count ++;
+                // 每一行的输出   把i 转成了 字符串
+                str += i.toString() + "    ";
+            }
+            // 每4个数据进行输出
+            if ( count ===4 ){
+                //输出
+                console.log(str);
+                count = 0;
+                str = "";
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

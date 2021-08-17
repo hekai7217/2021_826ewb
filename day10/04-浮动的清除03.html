@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-浮动的清除03.html</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            .b1{
+                border: 1px solid #000;
+            }
+
+            .b1 p{
+                height: 40px;
+                width: 60px;
+                background-color: #ff79ef;
+                float: left;
+
+            }
+        
+            .b2{
+                border: 1px solid #000;
+            }
+
+            .b2 p{
+                height: 40px;
+                width: 60px;
+                background-color: pink;
+                float: left;
+                /*margin-top: 10px;*/
+            }
+
+            .wall{
+                clear: both;
+            }
+
+    </style>
+</head>
+<body>
+<!--
+外墙法
+2.1在两个盒子中间添加一个额外的块级元素
+2.2给这个额外添加的块级元素设置clear: both;属性
+
+注意点:
+外墙法它可以让第二个盒子使用margin-top属性
+外墙法不可以让第一个盒子使用margin-bottom属性
+
+内墙法
+3.1在第一个盒子中所有子元素最后添加一个额外的块级元素
+3.2给这个额外添加的块级元素设置clear: both;属性
+
+注意点:
+内墙法它可以让第二个盒子使用margin-top属性
+内墙法它可以让第一个盒子使用margin-bottom属性
+
+解决：父盒子高度自适应，浮动影响后面的元素。
+缺点：浮动是css样式属性带来的问题，内墙法使用HTML结构去辅助解决问题，如果页面中浮动元素很多，需要添加多个没有语义的空标签，造成HTML结构的冗余。
+-->
+
+<div class="b1">
+    <p>我是p1</p>
+    <p>我是p1</p>
+    <p>我是p1</p>
+    <div class="wall"></div>
+</div>
+
+<div class="b2">
+    <p>我是p2</p>
+    <p>我是p2</p>
+    <p>我是p2</p>
+</div>
+
+</body>
+</html>

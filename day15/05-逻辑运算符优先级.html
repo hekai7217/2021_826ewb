@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-逻辑运算符优先级.html</title>
+    <script>
+
+        /**
+         * 1.逻辑运算符的优先级和结合性
+         逻辑运算符的结合性是左结合性(从左至右的运算)
+         在逻辑运算中&&的优先级高于||
+         *
+         */
+        let res = true && false;
+        let res2 = true || false;
+        console.log(res);
+        console.log(res2);
+
+        // 优先级   && 高于  ||
+        let res3 = false || true && true;
+        console.log(res3);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

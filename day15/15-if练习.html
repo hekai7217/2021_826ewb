@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15-if练习.html</title>
+    <script>
+        /**
+         2.接收用户输入的整数, 判断是星期几之后输出
+         3.接收用户输入的整数, 判断是什么季节之后输出3/4/5春季  6/7/8夏季  9/10/11秋季  12/1/2冬季
+         */
+        // let num = prompt("请输入周几(1-7)");
+        //
+        // if (num == 1) {
+        //     console.log("周一")
+        // } else if (num == 2) {
+        //     console.log("周2")
+        // } else if (num == 3) {
+        //     console.log("周3")
+        // } else if (num == 4) {
+        //     console.log("周4")
+        // } else if (num == 5) {
+        //     console.log("周5")
+        // } else if (num == 6) {
+        //     console.log("周6")
+        // } else if (num == 7) {
+        //     console.log("周7")
+        // } else {
+        //     alert("吊在树上打,输入非法");
+        // }
+
+        // 3.接收用户输入的整数, 判断是什么季节之后输出3/4/5春季  6/7/8夏季  9/10/11秋季  12/1/2冬季
+
+        let month = prompt("请输入月份?");
+        if (month == 1 || month == 2 || month == 12){
+            alert("寒冬");
+        }else if(month == 3 || month == 4 || month == 5){
+            alert("春眠不觉晓");
+        }else if (month == 6 || month == 7 || month == 8){
+            alert("吃西瓜");
+        } else if (month == 9 || month == 10 || month == 11){
+            alert("秋老虎");
+        }else{
+            alert("吊在树上打,输入非法");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>16-文本的对齐方式.html</title>
+    <style>
+        p {
+            background-color: skyblue;
+            text-align: left;
+            /*text-align: right;*/
+            /*text-align: center;*/
+
+            /*text-align: start;*/
+            /*text-align: end;*/
+
+        }
+
+        p:nth-of-type(2){
+            height: 200px;
+            width: 200px;
+            background-color: skyblue;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        span {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<!--
+文本对齐方式
+5.text-align
+text-align:文本的水平对齐方式
+left:左对齐，默认值
+center:居中对齐
+right:右对齐
+
+如果用在块容器上，表示容器中的内容对齐方式。
+     只有 div h1 p 这里可以使用
+
+对于行内元素无效，只适用于块元素或者块容器。
+    span 标签中没有用
+
+快捷键:
+ta text-align: left;
+tar text-align: right;
+tac text-align: center;
+-->
+<p>
+    江湖夜雨十年灯
+</p>
+<span>
+    浊酒一杯家万里
+</span>
+
+<p>
+    文字垂直居中
+</p>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20-CSS优先级.html</title>
+    <style>
+
+        body {
+            color: red;
+        }
+
+        ul {
+            color: #ff79ef;
+        }
+
+        li {
+            color: green;
+        }
+
+        li {
+            color: pink;
+        }
+
+
+        #p1 {
+            color: green;
+        }
+
+        .p2{
+            color: gold;
+        }
+
+        *{
+            color: pink;
+        }
+
+        body{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+ 1. 什么是CSS优先级
+    当多个选择器选中同一个标签,并且设置相同的属性时, 如何层叠或者说以哪个样式为主就是由优先级来决定的.
+
+    选中标签分为两种:
+    a. 直接选中
+        例如:
+            #id-p {}
+            .cls-p {}
+            p{}
+            *{}
+    b. 间接选中,其实就是通过继承性获取到父元素的样式
+        例如:
+            li{}
+            ul{}
+            body{}
+
+    2. 优先级确定的三种情况
+        a. 当是间接选中时,那么谁离目标标签更近,那么就以谁为主
+        b. 如果是相同类型选择器直接选中,就是谁写在后面就以谁为主
+        c. 如果是不同类型的选择器直接选中,那么就会按照优先级的默认规律来层叠
+            行内 > id > 类 > 标签 > 通配符 > 继承 > 浏览器默认
+-->
+
+<div>
+    <ul>
+        <li>我是li</li>
+    </ul>
+</div>
+
+<p style="color: red" id="p1" class="p2">
+    我是p标签
+</p>
+</body>
+</html>

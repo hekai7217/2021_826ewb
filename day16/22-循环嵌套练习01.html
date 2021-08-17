@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22-循环嵌套练习01.html</title>
+    <script>
+
+        /**
+         需求: 在界面中输出如下图形
+         *
+         **
+         ***
+         ****
+         *****
+
+         思路:
+           01 嵌套循环
+          02  行控制       外层循环
+          02  每行个数  内层循环  (每行*的个数 <= 行数)
+         */
+        for(let i = 1 ; i <=5 ; i++){
+            for(let j =1 ; j <=i ;j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

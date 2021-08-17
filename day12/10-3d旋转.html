@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10-3d旋转.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .father{
+            height: 200px;
+            width: 200px;
+            border: 1px solid #000;
+            margin: 100px auto;
+
+            /*  近大远小的效果 */
+            perspective:100px
+        }
+
+        .son{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+
+            /*  设置 3d旋转*/
+            /*   默认按照   z轴*/
+            /*transform: rotate(30deg);*/
+            /*transform: rotateZ(30deg);*/
+            /*transform: rotateX(30deg);*/
+            transform: rotateY(30deg);
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+<div class="father">
+    <div class="son"></div>
+</div>
+
+</body>
+</html>

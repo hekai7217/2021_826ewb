@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-盒子和内容居中.html</title>
+    <style>
+
+            .b1{
+                height: 100px;
+                width: 200px;
+                background-color: #ff79ef;
+                text-align: center;
+                /*
+                     第一个值是上下    0
+                     第二值是 左右  auto  左右一样多
+                */
+                line-height: 100px;
+                margin:200px auto ;
+            }
+
+            .b2{
+                height: 200px;
+                width: 200px;
+                background-color: #ff79ef;
+                padding: 0 20px;
+            }
+
+    </style>
+</head>
+<body>
+<!--
+text-align  内容居中 (水平方向居中)
+text-align: center 作用就是设置盒子中存储的文字或者图片水平方向居中
+ margin: 0 auto; 外边距   盒子居中
+            第一个值是上下    0    0 单位px可以省略 如果是具体值 不能省略
+            第二值是 左右  auto  左右一样多
+-->
+<div class="b1">
+    hello div
+</div>
+<div class="b2">
+    使用通配符选择器会选择页面上所有的标签,导致网页性能比较低,
+    所以建议大家使用我们需要设置清空边距的标签来清空
+    我们可以直接访问如下网址复制清空样式即可:
+</div>
+
+</body>
+</html>

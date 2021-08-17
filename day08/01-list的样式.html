@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-list的样式.html</title>
+    <style>
+
+            ul{
+                /* 没有圆点*/
+                /*list-style-type: none;*/
+                /*list-style-image: url("images/baby_1.jpg");*/
+                /*list-style-position:inside;*/
+                /*margin-left: 100px;*/
+
+                list-style: none url("images/baby_1.jpg") inside;
+            }
+
+    </style>
+</head>
+<body>
+
+<!--
+1.list-style-type    前面的原点
+2.list-style-image
+list-style-image:列表图片样式，这里需要使用url() 引入图片链接地址，这里地址写法和src的写法保持一致
+
+3.list-style-position
+list-style-position:列表定位样式
+取值 inside，outside，分别是内置和外置
+
+4.list-style
+列表复合样式，综合以上三种样式的复合写法
+
+这个用的比较多的是 去掉 原点
+
+-->
+<ul>
+    <li>广州</li>
+    <li>上海</li>
+    <li>天津</li>
+</ul>
+
+</body>
+</html>

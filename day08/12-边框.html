@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12-边框.html</title>
+    <style>
+
+        .b1 {
+            width: 100px;
+            height: 100px;
+            /*  边框的 宽度    边框的样式  边框的颜色 */
+            /*border: 1px solid #000;*/
+            /*
+                solid  实线
+                dashed  虚线
+                double 双线
+                dotted 点线
+            */
+            /*border: 5px solid red;*/
+            /*border: 5px dashed red;*/
+            /*border: 5px double red;*/
+            /*border: 5px dotted red;*/
+            /*border: 1px solid;*/
+            /*  省略边框的 宽度 默认是3px*/
+            /*border: solid red;*/
+
+            /*border-top: 边框的宽度 边框的样式 边框的颜色;*/
+            border-top: 5px solid red;
+            /*border-right: 边框的宽度 边框的样式 边框的颜色;*/
+            /*border-right: 5px dashed red;*/
+            /*border-bottom: 边框的宽度 边框的样式 边框的颜色;*/
+            /*border-bottom: 5px dotted red;*/
+            /*border-left: 边框的宽度 边框的样式 边框的颜色;*/
+            /*border-left: 5px double red;*/
+
+            /*  把边框 和 边框样式  颜色 分开写 */
+            border-left-width: 20px;
+            border-left-style: double;
+            border-left-color: pink;
+        }
+
+
+    </style>
+</head>
+<body>
+<!--
+1.边框
+边框就是环绕在标签宽度和高度周围的线条
+
+2.边框属性的格式
+(1) 同时设置四条边的边框
+border: 边框的宽度 边框的样式 边框的颜色;
+快捷键:
+bd+ border: 1px solid #000;
+总结:
+a.连写格式中颜色属性可以省略, 省略之后默认就是黑色
+b.连写格式中样式不能省略, 省略之后就看不到边框了
+c.连写格式中宽度可以省略, 省略之后还是可以看到边框
+
+(2) 分别设置四条边的边框方向
+border-top: 边框的宽度 边框的样式 边框的颜色;
+border-right: 边框的宽度 边框的样式 边框的颜色;
+border-bottom: 边框的宽度 边框的样式 边框的颜色;
+border-left: 边框的宽度 边框的样式 边框的颜色;
+
+快捷键:
+bt+ border-top: 1px solid #000;
+br+ border-right: 1px solid #000;
+bb+ border-bottom: 1px solid #000;
+bl+ border-left: 1px solid #000;
+-->
+
+<div class="b1"></div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12-html的基本结构.html</title>
+</head>
+<body>
+<!--
+HTML结构的层次关系
+1. 浏览器会加载HTML结构并且在内存中生成一个树形结构图
+2. 树形结构图中所有的内容都是节点
+3. 节点主要分为三类
+         [元素节点 li p body]
+         [属性节点 style="" charset = "UTF-8"]
+         [文本节点]      <title>12-html的层次结构.html</title> title中的文本
+4. 节点关系:
+    a. 父节点                                  body 是ul的父节点          head 是title的父节点
+    b. 子节点                                  li是ul的子节点                 title是head的子节点
+    c. 兄弟节点/同辈节点                ul和div是兄弟节点           多个li都是兄弟节点
+    d. 叶子节点: 最下面一层的,没有子节点的节点                    div, li 都是叶子节点
+    e. 根节点: 最上面一层的, 顶层节点                                    html标签就是根节点
+-->
+<ul>
+    <li>武汉</li>
+    <li>张家界-->湖南</li>
+    <li>张家口-->湖北</li>
+    <li>张家港-->江苏</li>
+</ul>
+<div>hello div</div>
+
+</body>
+</html>

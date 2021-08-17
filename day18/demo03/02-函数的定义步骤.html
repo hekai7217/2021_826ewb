@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-函数的定义步骤.html</title>
+    <script>
+        /**
+         1.1书写函数的固定格式
+                  function 函数名称(参数列表){
+                          封装的代码;
+                  }
+         1.2给函数起一个有意义的名称
+             1.为了提升代码的阅读性
+             2.函数名称也是标识符的一种, 所以也需要遵守标识符的命名规则和规范
+         1.3确定函数的形参列表
+                 看看使用函数的时候是否需要传入一些辅助的数据
+         1.4将需要封装的代码拷贝到{}中
+         1.5确定函数的返回值
+                    可以通过return 数据; 的格式, 将函数中的计算结果返回给函数的调用者
+         */
+
+        // 设置年龄的函数
+        // function setAge(){
+        //     //xxx
+        // }
+        // // 求和的函数
+        // function sum() {
+        //     // xxx
+        // }
+        // 求2个数字之和
+        let a = 10;
+        let b = 5;
+        // let res = a + b;
+
+        function sum(a,b){
+            let res = a + b;
+            return res;
+        }
+
+        //调用函数
+        let res = sum(a,b);
+        console.log(res);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

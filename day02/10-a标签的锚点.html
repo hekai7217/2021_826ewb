@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10-a标签的锚点.html</title>
+</head>
+<body>
+<!--
+概述: 超链接能够跳转到的位置称为锚点。
+如果想要通过超链接标签跳转到指定的位置，那么就必须告诉超链接标签一个独一无二的编号，这样a标签才能在当前页面中或者其他页面中找到需要跳转的目标位置,从而实现锚点的跳转。
+如何给每一个标签都绑定一个独一无二的编号呢，在HTML中每一个标签都有一个名称叫做Id的属性，那么这个属性就是用来给标签指定一个独一无二的编号的。
+实现锚点的步骤：
+1.给目标位置的标签添加一个id属性,然后给Id属性设置一个页面唯一的值。
+2.告诉a标签需要跳转的目标标签对应的id的值。
+格式:
+<a href=”#targetPosition”>跳转到目标位置</a>
+<h1 id=”targetPosition”>我是目标位置</h1>
+总结:
+1.通过a标签跳转到指定的位置，默认是没有添加过渡动画的。
+2.A标签除了可以跳转到当前页面的锚点位置，还可以跳转到其他页面的锚点位置
+格式：<a href=”xxx.html#targetPosition”>跳转到其他页面的目标位置</a>
+-->
+<p id="no4">网页顶部</p>
+<a href="#no1">第1章</a> <br>
+<a href="#no2">第2章</a> <br>
+<a href="#no3">第3章</a> <br>
+<a href="05-图片标签.html#no41">第4章</a> <br>
+
+<img src="img/yangmi2.webp"> <br>
+<img src="img/yangmi2.webp"> <br>
+<img src="img/yangmi2.webp"> <br>
+<img src="img/yangmi2.webp"> <br>
+<h1 id="no1">我是目标位置第1章</h1>
+<img src="img/yangmi2.webp"> <br>
+<img src="img/yangmi2.webp"> <br>
+<img src="img/yangmi2.webp"> <br>
+<img src="img/yangmi2.webp"> <br>
+<h1 id="no2">我是目标位置第2章</h1>
+<img src="img/yangmi2.webp"> <br>
+<img src="img/yangmi2.webp"> <br>
+<img src="img/yangmi2.webp"> <br>
+<h1 id="no3">我是目标位置第3章</h1>
+<a href="#no4"> 回到顶部</a>
+<a href="#"> 回到顶部</a>
+</body>
+</html>

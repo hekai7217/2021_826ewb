@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-input标签</title>
+</head>
+<body>
+<!--
+    form  只有 4个 表单域控件
+            input           输入框
+            select控件  下拉框
+            textarea    多文本输入框
+            button      按钮
+
+        input           输入框
+        表单组件 input
+        四要素: name value id type
+            name    提交到服务器地址的数据的key，如果表单中input标签没有设置name属性不能提交到数据到
+            服务器
+            http://localhost:63342/server/server.html?username=admin&password=1234
+             提交到服务器地址的数据的key
+            value    input显示的数据或者提交到服务器地址的数据
+               如果设置value值， input标签就会显示value的值，input可以编辑这个数据，编辑完了这个数据
+               value的就是新输入编辑后的数据
+            id          标签的唯一标识符  （只能唯一 ）
+            id属性和name属性区别?
+               id  是唯一的
+               name 可以重复，name属性的核心功能其实是用来表示提交给服务器的键的名称。
+            type     input 标签 有很多类型 type进行指定的类型
+                        type="text"                 文本输入框
+                        type="password"        密码输入框
+                        type="submit"           提交数据的按钮，默认的值是提交，如果需要显示指定的文本就设置
+                                                            value值
+-->
+<form action="/server/server.html" method="get">
+    <p>
+        用户名:<input id="uIdid
+" type="text" name="username">
+    </p>
+    <p>
+        密码:<input id="pwdId" type="password" name="password">
+    </p>
+
+    <p><input type="submit" value="注册"></p>
+</form>
+
+</body>
+</html>

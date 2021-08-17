@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-背景图片尺寸.html</title>
+    <style>
+
+        ul {
+            list-style: none;
+            width: 200px;
+            /* 让 ul 水平居中 */
+            margin: 50px auto;
+        }
+
+        ul > li {
+            /* 让 文本 和 图片 内容居中 */
+            height: 155px;
+            text-align: center;
+            border: 1px solid #000;
+            background-color: skyblue;
+            background-image: url(images/baby_1.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        ul li:nth-of-type(1) {
+
+        }
+
+        /*  设置指定的 像素大小 */
+        ul li:nth-of-type(2) {
+            background-size: 100px 100px;
+        }
+
+        /*  设置百分比    背景图片所在元素的宽度和高度*/
+        li:nth-of-type(3) {
+            background-size: 50% 50%;
+        }
+
+        /*  按照宽度: background-size: auto 像素值;*/
+        li:nth-of-type(4) {
+            background-size: auto 100px;
+            background-size: 100px auto;
+        }
+
+        /*
+          . cover取值
+         告诉浏览器图片需要等比拉伸
+         拉伸到宽度和高度都填充满整个元素
+        */
+        li:nth-of-type(5) {
+            background-size:cover;
+        }
+
+        /*
+           f. contain取值
+         告诉浏览器图片需要等比拉伸
+         拉伸到宽度或者高度都填充满整个元素
+        */
+        li:nth-of-type(6) {
+            background-size:contain;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+1. 什么是背景尺寸属性
+    格式: background-size: 宽度 高度; 专门用于设置背景图片大小的
+
+    快捷键:
+    bgs: background-size: 宽度 高度;
+
+2. 取值
+    a. 默认值: 背景图片默认的宽度和高度
+    b. 像素值: 设置背景图片的宽度和高度
+    c. 百分比: 相对于 背景图片所在元素的宽度和高度
+    d. 等比拉伸
+            按照宽度: background-size: auto 像素值;
+            按照高度: background-size: 像素值 auto;
+     e. cover取值
+         告诉浏览器图片需要等比拉伸
+         拉伸到宽度和高度都填充满整个元素
+     f. contain取值
+         告诉浏览器图片需要等比拉伸
+         拉伸到宽度或者高度都填充满整个元素
+-->
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+</body>
+</html>

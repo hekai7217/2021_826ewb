@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-表格的边框内边距属性.html</title>
+</head>
+<body>
+<!--
+3.外边距和内边距的属性
+作用:只能给table标签设置外边距和内边距
+总结:
+(1)外边距就是单元格和单元格之间的距离, 我们称之为外边距.
+(2)默认情况下单元格和单元格之间的外边距的距离是2px.
+(3)内边距就是单元格的边框和文字之间的间隙, 我们称之为内边距,默认情况下内边距是1px.
+
+4.单线表格/细线表格
+在表格标签中想通过指定外边距为0来实现单线表格是不靠谱的, 其实它是将2条线合并为了一条线
+
+细线表格的制作方式:
+1.给table标签设置bgcolor  背景颜色
+2.给tr标签设置bgcolor
+3.给table标签设置cellspacing = "1px"
+后期可以使用一个CSS样式来处理单线表格,这里我们了解一下
+style="border-collapse: collapse;" 表示边框折叠样式
+
+cellspacing=“”  这个属性可以设置外边距  给数值
+cellpadding=“”  这个属性可以设置内边距  给数值
+
+cellspacing="0"  2个单元格之间的线 重合在一起
+
+设置细线边框：
+  01 把 table边框设置border="0"
+  02 cellspacing="1"外边距设置为1
+  03 table的bgcolor设置 一个颜色
+  04 tr bgcolor="white"
+  05 细线通过 2个不一样的背景颜色，透过外边距展示出来的细线
+-->
+<table border="0" width="300" height="200" align="center" cellspacing="1" cellpadding="5" bgcolor="blue">
+    <tr bgcolor="white">
+        <td>id</td>
+        <td>name</td>
+        <td>age</td>
+        <td>gender</td>
+    </tr>
+
+    <tr>
+        <td>1001</td>
+        <td>张三</td>
+        <td>18</td>
+        <td>男</td>
+    </tr>
+    <tr>
+        <td>1002</td>
+        <td>李四</td>
+        <td>20</td>
+        <td>女</td>
+    </tr>
+</table>
+
+<table border="1" width="300" height="200" style="border-collapse: collapse;">
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>age</td>
+        <td>gender</td>
+    </tr>
+
+    <tr>
+        <td>1001</td>
+        <td>张三</td>
+        <td>18</td>
+        <td>男</td>
+    </tr>
+    <tr>
+        <td>1002</td>
+        <td>李四</td>
+        <td>20</td>
+        <td>女</td>
+    </tr>
+</table>
+
+
+</body>
+</html>

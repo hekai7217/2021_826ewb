@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-switch的穿透.html</title>
+    <script>
+
+        /**
+         *  如果 case中的break不写 会出现穿透情况
+         *    case 10:
+                alert(10);
+             case 11:
+                 alert(11);
+            break 删除  执行10的时候 接着继续执行 case11
+
+            可以多个case(条件)执行同一个代码块
+                 case 9:
+                 case 10:
+                    alert(9 + "或者 " + 10);
+                 break;
+         *
+         */
+        let a = 10;
+        switch (a) {
+            case 9:
+            case 10:
+                alert(9 + "或者 " + 10);
+                break;
+            case 11:
+                alert(11);
+                break;
+            case 12:
+                break
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

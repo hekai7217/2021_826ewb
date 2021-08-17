@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-浮动的清除03.html</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            .b1{
+                border: 1px solid #000;
+            }
+
+            .b1 p{
+                height: 40px;
+                width: 60px;
+                background-color: #ff79ef;
+                float: left;
+            }
+        
+            .b2{
+                border: 1px solid #000;
+            }
+
+            .b2 p{
+                height: 40px;
+                width: 60px;
+                background-color: pink;
+                float: left;
+            }
+
+            /* 伪选择器   使用css的代码添加了 一个 div 本质是内墙法
+               content的属性 display属性 clear属性一定要有
+             */
+            .b1::after{
+                /* 添加内容 给空就可以*/
+                content: "";
+                /* 模块的转换 显示为 块元素*/
+                display: block;
+                /* 浮动的清理*/
+                clear: both;
+                /*  模块的隐藏*/
+                visibility: hidden;
+            }
+    </style>
+</head>
+<body>
+<!--
+本质上就是内墙法, 只不过是直接通过CSS代码添加了内墙, 其它特性和内墙法都一样
+伪类选择器：通过选中的标签添加伪类，去选中标签的某个状态或位置。
+:after：这个伪类表示选中的是某个标签内部的最后的位置。
+书写方法：前面必须加普通的选择器，后面连续书写伪类名称。
+-->
+
+<div class="b1">
+    <p>我是p1</p>
+    <p>我是p1</p>
+    <p>我是p1</p>
+</div>
+
+<div class="b2">
+    <p>我是p2</p>
+    <p>我是p2</p>
+    <p>我是p2</p>
+</div>
+
+</body>
+</html>

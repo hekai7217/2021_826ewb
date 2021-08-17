@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08-字体大小em.html</title>
+    <style>
+
+            /** 组合选择器  多个选择器有同样的样式 **/
+            .f1,.f2,.f2{
+                font-size: 1.5em;
+            }
+
+            span{
+                font-size: 1.5em;
+            }
+
+    </style>
+</head>
+<body>
+<!--
+参考父元素的font-size,具有继承的特点。
+例如：浏览器默认字体是16px, 整个页面内所有设置为1em不是一个固定的值;
+字体大小同样都是1.5em，但是效果却截然不同，
+按照W3C提供的公式，
+我们可以计算下：
+class为id1的div字体大小继承自父元素body
+计算结果: 16px*1.5em = 24px
+class为id2的div字体大小继承自父元素id1
+计算结果: 24px*1.5em = 36px
+class为id3的div字体大小继承自父元素id2
+计算结果: 36px*1.5em = 54px
+-->
+我是中了500w 在这里体验生活
+<div class="f1">
+    我是div
+    <div class="f2">
+        我是div的div
+        <div class="f3">
+            我是div的div的div
+        </div>
+    </div>
+</div>
+<span>
+    我是span标签
+</span>
+
+</body>
+</html>

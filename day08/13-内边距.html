@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13-内边距.html</title>
+    <style>
+            
+            .b1{
+                width: 100px;
+                height: 100px;
+                border: 1px solid #000;
+
+                /*padding-top: 10px;*/
+                /*padding-right: 20px;*/
+                /*padding-bottom: 30px;*/
+                /*padding-left: 40px;*/
+
+            /*     简写  padding   上 右 下 左*/
+                padding: 10px 20px 30px 40px;
+            }
+
+            .b2{
+                width: 100px;
+                height: 100px;
+                border: 1px solid #000;
+
+                /*     简写  padding   上 右 下 左
+                        4个方向的值一样可以省略
+                */
+                padding: 10px;
+
+                /*  2个值 上下一样 左右一样*/
+                padding: 10px 20px;
+
+                /*  3个值 上下一样 左右一样   上 10  下 30px  左右  20px */
+                padding: 10px 20px 30px;
+                background-color: skyblue;
+            }
+        
+    </style>
+</head>
+<body>
+<!--
+1.什么是内边距?
+边框和内容之间的距离就是内边距,又称为留白,内边距里面是不能够放文本和元素的.
+
+2.格式
+(1) 分别设置四个方向的内边距
+padding-top: ; 上内边距
+padding-right: ; 右内边距
+padding-bottom: ; 下内边距
+padding-left: ; 左内边距
+
+(2) 统一设置四个方向的内边距
+padding: 上 右 下 左;
+这三个属性的取值是可以省略的
+总结:
+1.给标签设置内边距之后, 标签占有的宽度和高度会发生变化
+2.给标签设置内边距之后, 内边距也会有背景颜色
+3.内边距里面是不能够放文本和元素的.
+-->
+<div class="b1">
+
+</div>
+<div class="b2">
+
+</div>
+
+</body>
+</html>

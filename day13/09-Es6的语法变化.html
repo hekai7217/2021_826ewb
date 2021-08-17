@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09-Es6的语法变化.html</title>
+    <script>
+        /**
+
+         ECMAScript       搞script指定的标记,不同的版本
+
+         Es6语法变量
+         为了解决老板标准的的两个注意点
+         1.在JavaScript中如果定义了同名的变量, 那么后定义的变量会覆盖先定义的变量
+         2.在老版本的标准的(ES6之前)JavaScript中可以先使用变量, 再定义变量, 并不会报错
+         在ES6中就推出了一种新的定义变量的方式
+         格式:
+         ES6之前: var 变量名称;
+         ES6开始: let 变量名称;
+
+         总结: 使用let
+
+         */
+        // es6 之前
+        // var a = 10;
+        // var a = 20;
+        // console.log(a);
+
+        //  es6之前
+        // console.log(name)
+        // var name = "张伟";
+
+        //Es6 之后 用let 替换 var
+        // let中 名称重复了 运行会报错
+        // let age = 18;
+        let age = 19;
+        console.log(age);
+        console.log(name)
+        let name = "李娜";
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
